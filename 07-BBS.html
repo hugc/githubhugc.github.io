@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>阴阳师_手游论坛</title>
+    <link rel="stylesheet" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/forum.css"/>
+    <link rel="stylesheet" href="css/同人推荐下半部分css.css"/>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/forum.js"></script>
+</head>
+<body>
+    <!--遮罩-->
+   <div id="forumMask"></div>
+    <!-- 弹出框-->
+    <div id="forumPop">
+        <span id="forumClose"><img src="images/论坛_02.png"/></span>
+        <a href="#" id="forumCloseImg"><img src="images/论坛_01.png"/></a>
+    </div>
+    <!--左下角固定图-->
+    <div class="forum-tool" id="forumTool">
+        <div class="forum-none"></div>
+        <img src="images/load_02.png" class="forum-loadtwo"/>
+        <img src="images/close.png"  id="forumSmallX">
+    </div>
+    <img src="images/load_01.png" id="forumMore"/>
+    <!--顶部开始-->
+    <div class="forum-top">
+        <div class="w">
+            <!--顶部左边a链接-->
+            <div class="forum-top-left">
+                <a href="#">论坛首页</a>
+                <a href="#">收藏本站</a>
+                <a href="#">礼包中心</a>
+                <a href="#">论坛任务</a>
+                <a href="#">勋章兑换</a>
+                <a href="#">每日签到</a>
+                <a href="#">论坛APP</a>
+                <a href="#">帮助中心</a>
+            </div>
+            <!--顶部右边小手机和搜索框-->
+            <div class="forum-top-right">
+                <a href="#" id="forumPhone">
+                    <span class="iconfont" id="forumiIcPhone">&#xe63c</span>
+                    <img src="images/erweima.jpg" alt="点击扫描二维码" id="forumErweima"/>手机版
+                </a>
+                <div class="forum-search">
+                    <input type="text" placeholder="请输入搜索内容"/>
+                    <span class="iconfont">&#xe611</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中部登录区域开始-->
+    <div class="w forum-loginArea">
+        <div class="forum-loginText">
+            <div class="forum-login">
+                <a href="#" class="forum-loginone">登录</a>
+            </div>
+            <a href="#" class="forum-pass">找回密码</a>
+            <a href="#" class="forum-reg">注册通行证</a>
+        </div>
+    </div>
+    <!--中部导航栏开始-->
+    <div class="w forum-nav">
+        <ul>
+            <li><a href="#">论坛首页</a></li>
+            <li><a href="#">游戏官网</a></li>
+            <li class="forum-third">
+                <a href="#">攻略站</a>
+                <img src="images/hot.gif"/>
+            </li>
+            <li><a href="#" >同人站</a></li>
+            <li><a href="#">联系客服</a></li>
+            <li><a href="#">助手APP</a></li>
+            <li><a href="#">论坛APP</a></li>
+            <li><a href="#">视频站 </a></li>
+        </ul>
+        <div class="forum-nav-right">
+            <a href="#" class="forum-fast-nav">快捷导航
+                <img src="images/xiaosanjiao%20.png" class="forum-xiaosan">
+            </a>
+            <a href="#" class="forum-sign">签到</a>
+        </div>
+    </div>
+    <!--中心部分-->
+    <div class="w forum-main" style="margin-bottom: 10px">
+        <!--左边轮播图-->
+       <div class="forum-lunbo" id="forumLunBoTu">
+           <ul>
+               <li>
+                   <a href="#"><img src="images/lunbo_01.jpg" title="【第二期征集】邂逅之时·式神日常同人征集"></a>
+                   <a href="#" class="forum-option"><span>【第二期征集】邂逅之时·式神日常同人征集</span></a>
+               </li>
+               <li>
+                   <a href="#"><img src="images/lunbo_02.jpg" title="书法限定T恤，阴阳夏日装备集结！"></a>
+                   <a href="#" class="forum-option"><span>书法限定T恤，阴阳夏日装备集结！</span></a>
+               </li>
+               <li>
+                   <a href="#"><img src="images/lunbo_03.jpg" title="助手APP上线！阴阳趣闻，尽在'掌握'"></a>
+                   <a href="#" class="forum-option"><span>助手APP上线！阴阳趣闻，尽在"掌握"</span></a>
+               </li>
+               <li>
+                   <a href="#"><img src="images/lunbo_04.png" title="《阴阳师》6月16日正式服更新详情"></a>
+                   <a href="#" class="forum-option"><span>《阴阳师》6月16日正式服更新详情</span></a>
+               </li>
+               <li>
+                   <a href="#"><img src="images/lunbo_05.png" title="【活动】现世巡游•创意照片征集系列"></a>
+                   <a href="#" class="forum-option"><span>【活动】现世巡游•创意照片征集系列</span></a>
+               </li>
+           </ul>
+           <ol>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+           </ol>
+       </div>
+        <!--中间新闻-->
+        <div class="forum-news">
+            <div class="forum-hottitle">
+                <a href="#" title="平安京新式神 《阴阳师》新版本上线倒计时">平安京新式神 《阴阳师》新版本上线倒计时</a>
+            </div>
+            <div class="forum-newone">
+                <ul>
+                    <li>
+                        <span>[公告]</span>
+                        <a href="#" title="阴阳师6月20日体验服维护详情">阴阳师6月20日体验服维护详情</a>
+                    </li>
+                    <li>
+                        <span>[新闻]</span>
+                        <a href="#" title="未收录SSR降临 重磅活动助攻平安京式神邂逅">未收录SSR降临 重磅活动助攻平安京式神邂逅</a>
+                    </li>
+                    <li>
+                        <span>[公告]</span>
+                        <a href="#" title="《阴阳师》6月16日正式服更新详情">《阴阳师》6月16日正式服更新详情</a>
+                    </li>
+                    <li>
+                        <span>[活动]</span>
+                        <a href="#" title="现世巡游•创意照片征集系列">现世巡游•创意照片征集系列</a>
+                    </li>
+                    <li>
+                        <span>[公告]</span>
+                        <a href="#" title="《阴阳师》6月16日服务器维护公告">《阴阳师》6月16日服务器维护公告</a>
+                    </li>
+                </ul>
+                <div class="forum-figure">
+                    <a href="#" title="阴阳师助手APP上线～"><img src="images/newone.png" alt="阴阳师助手APP上线～"/></a>
+                    <div class="forum-decript">
+                        <a href="#" title="阴阳师助手APP上线">阴阳师助手APP上线</a>
+                    </div>
+                </div>
+            </div>
+            <div class="forum-newone" id="forumNewtwo">
+                <ul>
+                    <li>
+                        <span>[攻略]</span>
+                        <a href="#" title="全新SR小松丸技能初步解析与用法探讨">全新SR小松丸技能初步解析与用法探讨</a>
+                    </li>
+                    <li>
+                        <span>[攻略]</span>
+                        <a href="#" title="兵俑：应该是最强力的R卡之一！">兵俑：应该是最强力的R卡之一！</a>
+                    </li>
+                    <li>
+                        <span>[攻略]</span>
+                        <a href="#" title="阴阳斗技编年史一：一拳超人统治的时代！">阴阳斗技编年史一：一拳超人统治的时代！</a>
+                    </li>
+                    <li>
+                        <span>[攻略]</span>
+                        <a href="#" title="暴风之巅！大天狗秘闻副本速通攻略！">暴风之巅！大天狗秘闻副本速通攻略！</a>
+                    </li>
+                    <li>
+                        <span>[攻略]</span>
+                        <a href="#" title="小鹿天狗史诗级加强！5.10体验服解读！">小鹿天狗史诗级加强！5.10体验服解读！</a>
+                    </li>
+                </ul>
+                <div class="forum-figure">
+                    <a href="#" title="全式神解读栏目汇总！"><img src="images/newtwo.jpg" alt="全式神解读栏目汇总！"/></a>
+                    <div class="forum-decript">
+                        <a href="#" title="全式神解读栏目汇总！">全式神解读栏目汇总！</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右边下载-->
+        <div class="forum-main-right">
+            <div class="forum-download">
+                <div class="forum-code">
+                    <img src="images/code.png" title="阴阳师下载二维码"/>
+                </div>
+                <div class="forum-load">
+                    <a href="#" title="iOS下载"><img src="images/ios.png" alt=""/></a>
+                    <a href="#" title="安卓下载"><img src="images/android.png" alt=""/></a>
+                </div>
+            </div>
+            <!--快速通道-->
+            <div class="forum-fast">
+                <span></span>
+                <b>快速通道</b>
+                <s>客服电话：0571-26201179 </s>
+            </div>
+            <div class="forum-link">
+                <a href="#" title="外挂举报"><img src="images/link_01.png" title="外挂举报"/><span>外挂举报有奖</span></a>
+                <a href="#" title="渠道举报"><img src="images/link_02.png" title="渠道举报"/><span>渠道举报有奖</span></a>
+                <a href="#" title="问题反馈"><img src="images/link_03.png" title="问题反馈"/><span>问题反馈</span></a>
+                <a href="#" title="攻略汇总"><img src="images/link_04.png" title="攻略汇总"/><span>攻略汇总</span></a>
+            </div>
+        </div>
+    </div>
+    <!--视频宣传部分-->
+    <div class="w forum-banner" style="width: 1600px">
+        <div class="forum-help">
+            <h5>阴阳界异闻录</h5>
+            <div class="forum-helpway">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/help_01.png"/>
+                            <div class="forum-text">
+                                <p>自助专区</p>
+                                <span>游戏内BUG可到此提单</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/help_02.png"/>
+                            <div class="forum-text">
+                                <p>充值问题汇总</p>
+                                <span>游戏充值问题点此进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/help_03.png"/>
+                            <div class="forum-text">
+                                <p>萌新300问</p>
+                                <span>萌新の家！爱哟♂</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/help_04.png"/>
+                            <div class="forum-text">
+                                <p>勾玉扣除申诉</p>
+                                <span>代充处罚申诉</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/help_05.png"/>
+                            <div class="forum-text">
+                                <p>封停&式神申诉</p>
+                                <span>封停&式神到这里反馈！</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="forum-vedioAear">
+            <video src="temp/网易手游《阴阳师》官方宣传片_高清.mp4" width="1600" height="510" autoplay controls="controls"></video>
+        </div>
+    </div>
+    <!--招募图-->
+    <div class="w forum-recruit" style="width: 1600px">
+        <img src="images/recruit.png" width="1600px"/>
+    </div>
+    <!--返回主页-->
+    <div class="w forum-home">
+        <div class="forum-return">
+            <img src="images/home.png" title="首页" class="forum-homeImg"/>
+            <img src="images/next.png" class="forum-next"/>
+            <a href="#" class="forum-address">网易手机游戏官网论坛</a>
+            <img src="images/next.png" class="forum-next"/>
+            <a href="#" class="forum-address">阴阳师</a>`
+        </div>
+    </div>
+    <!--讨论区域-->
+    <div class="w forum-discuss">
+        <!--头部网址-->
+        <div class="forum-short">
+            <div class="forum-inner">
+                <a href="#" class="forum-yy">阴阳师</a>
+                <a href="#">https://yys.16163.com/</a>
+                <span>
+                    <img src="images/star.png"/>
+                    <a href="#">收藏本版<b>(437)</b></a>
+                </span>
+            </div>
+        </div>
+        <!--发帖讨论模块-->
+        <div class="forum-invit">
+            <ul>
+                <li>
+                    <img src="images/discuss_01.png"/>
+                    <div class="forum-massage">
+                        <p>
+                            <a href="#">阴阳师|官方公告</a>
+                            <span title="今日">今日: <s>(4)</s></span>
+                        </p>
+                        <div class="forum-description">
+                            最新公告，更新维护，官方信息发布
+                        </div>
+                        <div class="forum-statis">
+                            主题: 588,帖数:4万
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/discuss_02.png"/>
+                    <div class="forum-massage">
+                        <p>
+                            <a href="#">阴阳师|综合讨论</a>
+                            <span title="今日">今日: <s>(108)</s></span>
+                        </p>
+                        <div class="forum-description">
+                            八卦杂谈，游戏趣闻，畅所欲言
+                        </div>
+                        <div class="forum-statis">
+                            主题: 14万,帖数:157万
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/discuss_03.png"/>
+                    <div class="forum-massage">
+                        <p>
+                            <a href="#">阴阳师|视频攻略</a>
+                            <span title="今日">今日: <s>(20)</s></span>
+                        </p>
+                        <div class="forum-description">
+                            攻略资料，战术视频，尽收于此
+                        </div>
+                        <div class="forum-statis">
+                            主题: 6155,帖数:18万
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/discuss_04.png"/>
+                    <div class="forum-massage">
+                        <p>
+                            <a href="#">阴阳师|建议反馈</a>
+                            <span title="今日">今日: <s>(2)</s></span>
+                        </p>
+                        <div class="forum-description">
+                            BUG反馈，建议记录
+                        </div>
+                        <div class="forum-statis">
+                            主题: 4808,帖数:2万
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/discuss_05.png"/>
+                    <div class="forum-massage">
+                        <p>
+                            <a href="#"id="forumSpecial">阴阳师|观星寮</a>
+                        </p>
+                        <div class="forum-description">
+                            共观星相，齐识阴阳，欢迎围观投稿
+                        </div>
+                        <div class="forum-statis">
+                            主题: 23,帖数:2512
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/discuss_06.png"/>
+                    <div class="forum-massage">
+                        <p>
+                            <a href="#">阴阳师|同人专区</a>
+                            <span title="今日">今日: <s>(2)</s></span>
+                        </p>
+                        <div class="forum-description">
+                            各位大触请不要大意地用大作投喂论坛姬啦！
+                        </div>
+                        <div class="forum-statis">
+                            主题: 2951,帖数:3万
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/discuss_07.png"/>
+                    <div class="forum-massage">
+                        <p>
+                            <a href="#">阴阳师|活动专区</a>
+                            <span title="今日">今日: <s>(1)</s></span>
+                        </p>
+                        <div class="forum-description">
+                            撒！各种福利尽在此处，快来交易吧！
+                        </div>
+                        <div class="forum-statis">
+                            主题: 1万,帖数:1万
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/discuss_08.png"/>
+                    <div class="forum-massage">
+                        <p>
+                            <a href="#">阴阳师|灵视全开</a>
+                            <span title="今日">今日: <s>(2)</s></span>
+                        </p>
+                        <div class="forum-description">
+                            灵视全开，攻略开征！<br/>
+                            <a href="#" class="forum-sub">【活动专题首页】</a>
+                        </div>
+                        <div class="forum-statis">
+                            主题: 578,帖数:3511
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/discuss_09.png"/>
+                    <div class="forum-massage">
+                        <p>
+                            <a href="#">阴阳师|皮肤征集</a>
+                        </p>
+                        <div class="forum-description">
+                            你的脑洞，我来实现！<br/>
+                            <a href="#" class="sub">【活动专题首页】</a>
+                        </div>
+                        <div class="forum-statis">
+                            主题: 1万,帖数:2万
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/discuss_10.png"/>
+                    <div class="forum-massage">
+                        <p>
+                            <a href="#">阴阳师|周边征集</a>
+                        </p>
+                        <div class="forum-description">
+                            万元奖金大赏，海量周边礼包 <br/>
+                            <a href="#" class="forum-sub">【周边大赛专题页】</a>
+                        </div>
+                        <div class="forum-statis">
+                            主题: 3122,帖数:1万
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--=======================================================-->
+    <!--同人推荐：第一部分-->
+    <div class="recommend w">
+        <!--文字部分-->
+        <div class="recommend-head">
+            <div class="recommend-head-left">同人推荐</div>
+            <div class="recommend-head-right"><a href="javascript:void(0)">查看更多</a></div>
+        </div>
+        <!--图片部分-->
+        <div class="pic-box" id="pic-box">
+            <ul class="ul" id="ul">
+                <li id="screen">
+                    <a href="javascript:void(0)"><img src="images/1.jpg" alt=""/></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/2.jpg" alt=""/></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/3.jpg" alt=""/></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/4.jpg" alt=""/></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/5.png" alt=""/></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/6.jpg" alt=""/></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/7.jpg" alt=""/></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="images/8.jpg" alt=""/></a>
+                </li>
+            </ul>
+
+
+            <!--左右按钮-->
+            <div id="arr">
+                <span id="left"><</span>
+                <span id="right">></span>
+            </div>
+
+        </div>
+    </div>
+    <!--游戏视频：第二部分-->
+    <div class="video w">
+        <div class="left">
+            <!--左边上面文字列表部分-->
+            <div class="video-left-top">
+                <div class="game-video-content">游戏视频</div>
+                <div class="game-video-list">
+                    <ul id="game-video-list-ul">
+                        <li class="game-video-list-current"><a href="#">推荐</a>
+                            <em class="game-video-em"></em></li>
+                        <li><a href="#">同人作品</a> <em class="game-video-em"></em></li>
+                        <li><a href="#">脱非入欧</a> <em class="game-video-em"></em></li>
+                        <li><a href="#">式神搭配</a> <em class="game-video-em"></em></li>
+                        <li><a href="#">对战PK</a> <em class="game-video-em"></em></li>
+                        <li><a href="#">阶梯挑战</a> <em class="game-video-em"></em></li>
+                        <li class="game-video-list-current"><a href="#">全部</a> <em class="game-video-em"></em></li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <!--左边下面视频部分-->
+            <div class="video-left-bottom">
+                <div class="video-left-bottom-left">
+                    <div class="video-left-bottom-left-v" id="video-left-bottom-left-v">
+                        <a href="#" id="video"><img src="images/shipin-left.png" alt=""/></a>
+                    </div>
+                    <div class="video-left-bottom-left-d">
+                        <a href="#"><p id="desc">夜叉一招20W伤害.瞬秒40级石距</p></a>
+                        <span id="content">喜欢我就“点关注”，有想法就“请留言”，我会仔细阅读大家的评论与建议并回复的！欢迎骚扰</span>
+                    </div>
+                </div>
+                <div class="video-left-bottom-right" id="video-left-bottom-right">
+                    <ul class="v-l-b-r-r">
+                        <li><a href="#"><img src="images/shipin-right1.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/shipin-right2.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/shipin-right3.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/shipin-right4.png" alt=""/></a></li>
+
+                    </ul>
+
+
+
+                    <!--<script>-->
+                    <!--$(function(){-->
+                    <!--$("#video-left-bottom-right li").mouseenter(function(){-->
+                    <!--$(this).css("opacity", 0.9).siblings("li").css("opacity",1);-->
+                    <!--});-->
+                    <!--$("#video-left-bottom-right").mouseleave(function(){-->
+                    <!--$(".video-left-bottom-right li").css("opacity",1);-->
+                    <!--});-->
+                    <!--})-->
+                    <!--</script>-->
+                    <div class="page">
+                        <ul id="page-backAll">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">末页</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="right-top">
+                <span class="new">最新资讯</span>
+                <a href="#"><span class="more">查看更多</span></a>
+            </div>
+            <!--下面资讯部分-->
+            <div class="right-info">
+                <ul>
+                    <li>
+                        <div class="right-info-one">1</div>
+                        <a href="#" class="content">【观星廖第二期】3.10体验</a>
+                        <div class="play"><span class="play-i"></span>1177
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-info-one">2</div>
+                        <a href="#" class="content">【观星廖第二期】3.10体验</a>
+
+                        <div class="play"><span class="play-i"></span>1177
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-info-one">3</div>
+                        <a href="#" class="content">【观星廖第二期】3.10体验</a>
+
+                        <div class="play"><span class="play-i"></span>1177
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-info-one">4</div>
+                        <a href="#" class="content">【观星廖第二期】3.10体验</a>
+
+                        <div class="play"><span class="play-i"></span>1177
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-info-one">5</div>
+                        <a href="#" class="content">【观星廖第二期】3.10体验</a>
+
+                        <div class="play"><span class="play-i"></span>1177
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-info-one">6</div>
+                        <a href="#" class="content">【观星廖第二期】3.10体验</a>
+
+                        <div class="play"><span class="play-i"></span>1177
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-info-one">7</div>
+                        <a href="#" class="content">【观星廖第二期】3.10体验</a>
+
+                        <div class="play"><span class="play-i"></span>1177
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-info-one">8</div>
+                        <a href="#" class="content">【观星廖第二期】3.10体验</a>
+
+                        <div class="play"><span class="play-i"></span>1177
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-info-one">9</div>
+                        <a href="#" class="content">【观星廖第二期】3.10体验</a>
+
+                        <div class="play"><span class="play-i"></span>1177
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-info-one">10</div>
+                        <a href="#" class="content">【观星廖第二期】3.10体验</a>
+
+                        <div class="play"><span class="play-i"></span>1177
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--footer部分-->
+    <div class="footer">
+        <div class="footer-box">
+            <p>
+                <a href="#">手机版</a>
+                <i>|</i>
+                <a href="#" class="disc">论坛APP</a>
+                <i>|</i>
+                <a href="#">公司简介</a>
+                <i>|</i>
+                <a href="#">客户服务</a>
+                <i>|</i>
+                <a href="#">相关法律</a>
+                <i>|</i>
+                <a href="#">网易游戏</a>
+                <i>|</i>
+                <a href="#">联系我们</a>
+                <i>|</i>
+                <a href="#">商务合作</a>
+                <i>|</i>
+                <a href="#">加入我们</a>
+                <i>|</i>
+            </p>
+            <p class="copyright">Copyright 2014-2017 16163游戏网, All Rights Reserved</p>
+            <p class="copyright-all">杭州网易雷火科技有限公司版权所有 ?1997-2017 <i>|</i><a class="parent" href="#">点击查看家长监护工程</a> ></p>
+            <p class="copyright-bottom">全国文化市场统一举报电话: 12318 文化部网络游戏举报和联系电子邮箱: <a href="#">wlwh@vip.sina.com</a></p>
+        </div>
+    </div>
+
+
+    </body>
+<!--<script src="js/同人推荐下半部分js.js"></script>-->
+</html>

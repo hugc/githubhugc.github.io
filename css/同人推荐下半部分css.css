@@ -1,0 +1,500 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+
+}
+ul{
+    list-style:none;
+}
+.w{
+    width:1580px;
+    margin:0 auto;
+}
+body{
+    background-color: #1A0E1C;
+}
+.recommend{
+    width:1600px;
+    height:420px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+}
+.recommend-head {
+    width:1570px;
+    height:40px;
+    border-bottom: 1px solid #EEEEEE;
+    margin-left:15px;
+    position:relative;
+}
+.recommend-head-left {
+    line-height: 40px;
+    font-size:20px;
+    font-weight: 500;
+    color:#D91A29;
+    position: absolute;
+}
+.recommend-head-right{
+    position: absolute;
+    right:0;
+
+}
+.recommend-head-right a{
+    color:#9E9898;
+    display:block;
+    line-height: 40px;
+    font-size: 14px;
+}
+.recommend-head-right a:hover{
+    text-decoration: underline;
+}
+/*图片部分*/
+.pic-box{
+    width:1570px;
+    height:350px;
+    margin-top: 15px;
+    /*border:1px solid black;*/
+    margin-left:15px;
+    float:left;
+    overflow: hidden;
+    position: relative;
+
+}
+.pic-box ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    float:left;
+    width: 3200px;
+}
+.pic-box li{
+    float:left;
+    display: block;
+    width:232px;
+    height:350px;
+    transition: 1s ease;
+    opacity: 0.7;
+    margin-right: 3px;
+}
+.pic-box li:hover {
+    opacity: 1;
+}
+
+.pic-box li img{
+    width: 100%;
+    height: 100%;
+    float:left;
+    margin-right: 10px;
+    overflow: hidden
+}
+/*图片上的左右按钮*/
+#arr {
+    /*display: none;*/
+}
+
+#arr span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+}
+
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+
+
+
+/*第二部分：游戏视频*/
+.video{
+    width:1600px;
+    height:380px;
+    margin-top: 10px;
+}
+/*左边视频部分*/
+.video .left{
+    width:1200px;
+    height:380px;
+    background-color: white;
+    float:left;
+    margin-right: 10px;
+}
+
+.video .right{
+    width:390px;
+    height:380px;
+    background-color: white;
+    float:left;
+}
+/*左侧视频上半部分文字*/
+.video-left-top{
+    width:1185px;
+    height:40px;
+    border-bottom:1px solid #EEEEEE;
+    margin-left: 15px;
+}
+.game-video-content{
+    width:140px;
+    height:40px;
+    /*background-color: pink;*/
+    line-height: 40px;
+    font-size:18px;
+    font-weight: 700;
+    color:#D91A29;
+    float:left;
+}
+.game-video-list{
+    width:1040px;
+    height:40px;
+    /*background-color: yellow;*/
+    line-height: 40px;
+    font-size:12px;
+    float:left;
+    /*margin-left: 22px;*/
+}
+
+.game-video-list ul {
+    margin-left: 22px;
+    float:left;
+
+}
+.game-video-list li{
+    float:left;
+    margin-right: 35px;
+    position: relative;
+}
+
+.game-video-list-current em {
+    width: 50px;
+    margin-left: 0;
+}
+.game-video-em {
+    width: 70px;
+    height: 24px;
+    position: absolute;
+    z-index: 10;
+    margin-left: 6px;
+    border-radius: 2px;
+    top: 8px;
+}
+.game-video-list li a{
+    display: block;
+    color:#333333;
+    position: relative;
+    z-index: 11;
+    margin-left: 13px;
+    font-size: 14px;
+    font-family: "Microsoft yahei";
+}
+/*<!--左边下面视频部分-->*/
+.video-left-bottom{
+    width:1185px;
+    height:301px;
+    margin-top: 20px;
+    margin-left: 15px;
+    /*padding-top: 7px;*/
+
+    /*background-color: pink;*/
+}
+/*左边下面视频左边部分*/
+.video-left-bottom-left {
+    width:629px;
+    height:301px;
+    /*background-color: blue;*/
+    float:left;
+    margin-right: 10px;
+
+}
+.video-left-bottom-left-v{
+    width:629px;
+    height:250px;
+}
+.video-left-bottom-left-v #video{
+    display:block;
+    width:629px;
+    height:250px;
+}
+.video-left-bottom-left-v #video img{
+    width:629px;
+    height:250px;
+}
+.video-left-bottom-left-d{
+    width:622px;
+    height:46px;
+    background-color: #F1EDED;
+    padding-left: 4px;
+    padding-bottom: 8px;
+    display: block;
+    white-space: nowrap;
+
+    /*opacity:0.1;*/
+}
+.video-left-bottom-left-d a:hover{
+    text-decoration: underline;
+}
+.video-left-bottom-left-d #desc{
+    font-size: 18px;
+    line-height: 32px;
+    color:#D91A29;
+
+}
+.video-left-bottom-left-d #content{
+    font-size: 14px;
+    color:#A3A0A1;
+    display:block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+/*左边下面视频右边部分*/
+.video-left-bottom-right {
+    width:540px;
+    height:301px;
+    float: left;
+}
+.video-left-bottom-right ul{
+    float:left;
+    width: 540px;
+    margin-right: -9px;
+}
+.video-left-bottom-right .v-l-b-r-r li{
+    float: left;
+    display: block;
+    width:220px;
+    height:120px;
+    margin-right: 9px;
+    margin-bottom: 9px;
+}
+.video-left-bottom-right ul li:nth-child(2) {
+    margin-right: 0;
+}
+.video-left-bottom-right ul li:nth-child(4) {
+    margin-right: 0;
+}
+.video-left-bottom-right .v-l-b-r-r a{
+    display: block;
+    width:210px;
+    height:120px;
+}
+
+.video-left-bottom-right ul img{
+    width:210px;
+    height:120px;
+}
+
+/*下面换页面部分*/
+.video-left-bottom .page{
+    width:254px;
+    height:32px;
+    /*background-color: pink;*/
+    float: right;
+    margin-top: 18px;
+}
+/*.video-left-bottom .page ul{*/
+    /*float:left;*/
+/*}*/
+/*.video-left-bottom .page ul li{*/
+    /*float:left;*/
+/*}*/
+/*.video-left-bottom .page ul li a{*/
+    /*display:block;*/
+/*}*/
+
+.video-left-bottom .page ul{
+    float:right;
+    width:254px;
+}
+.video-left-bottom .page li a {
+    display: block;
+    color: #333333;
+}
+.video-left-bottom .page li{
+    float:left;
+    width:25px;
+    height:32px;
+    border:1px solid #DDDDDD;
+    text-align: center;
+    line-height: 32px;
+    margin-left: 5px;
+}
+/*.video-left-bottom .page li:first-child{*/
+    /*background-color: #D91A29;*/
+/*}*/
+.video-left-bottom .page li:last-child{
+    width:44px;
+}
+
+
+
+/*第二部分游戏视频右边资讯部分*/
+.video .right-top{
+    width:350px;
+    height:40px;
+    border-bottom:1px solid #EEEEEE;
+    margin-left: 15px;
+}
+.video .right-top .new{
+    line-height: 40px;
+    font-size:18px;
+    font-weight: 700;
+    color:#D91A29;
+    float:left;
+}
+.video .right-top a{
+    display:block;
+    font-size: 14px;
+    float:right;
+    line-height: 40px;
+}
+/*下面资讯部分*/
+.video .right-info{
+    width:350px;
+    height:305px;
+    /*background: red;*/
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.video .right-info ul{
+    width:350px;
+    float:left;
+    text-align: center;
+}
+.video .right-info li {
+    width:350px;
+    height: 18px;
+    float: left;
+    margin-bottom: 13px;
+}
+.video .right-info li .right-info-one{
+    width:18px;
+    height:18px;
+    background-color:#D91A29;
+    color:white;
+    float:left;
+    text-align: center;
+    margin-right: 14px;
+}
+.video .right-info li .content{
+    display:block;
+    font-size: 14px;
+    width: 200px;
+    color:#333333;
+    float:left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.video .right-info li .content:hover{
+    text-decoration: underline;
+}
+
+.video .right-info li .play{
+    float:left;
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 21px;
+    margin-top: -2px;
+
+}
+.play-i {
+    display: block;
+    width: 13px;
+    float: left;
+    height: 11px;
+    margin-right: 6px;
+    margin-top: 4px;
+    background:url("../images/yinyangfshi_r2_c5.png");
+}
+/*footer部分*/
+.footer{
+    height:177px;
+    border-top: 1px solid #fff;
+    background-color: #333333;
+    margin-top: 20px;
+}
+.footer .footer-box{
+    width:645px;
+    height:177px;
+    margin:0 auto;
+}
+.footer .footer-box li{
+    float:left;
+    font-size: 12px;
+    margin-right: 12px;
+    color: #fff;
+}
+.footer-box p {
+    display: block;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #999999;
+}
+.footer-box p a {
+    color: #999999;
+    font-size: 12px;
+    line-height: 54px;
+}
+.footer-box p .disc{
+    color: #21EBF2;
+}
+.footer-box p i {
+    font-style: normal;
+    width: 17px;
+    height: 16px;
+    text-align: center;
+    line-height: 10px;
+    color: #999999;
+    display: inline-block;
+}
+.footer-box p i:last-child {
+    width: 8px;
+    text-align: right;
+
+}
+.footer-box .copyright{
+    font-size: 12px;
+    color: #999999;
+    height: 30px;
+    text-align: center;
+}
+.copyright-all {
+    dispaly:block;
+    text-align: center;
+}
+.copyright-all a {
+    font-size: 14px!important;
+}
+.copyright-bottom {
+    text-align: center;
+}
+.copyright-bottom a {
+    font-size: 14px!important;
+}
+.footer .footer-box a:hover{
+    text-decoration: underline;
+}
+.footer .footer-box p .parent {
+    /*margin-left: 185px;*/
+    display: inline-block;
+    width: 140px;
+    line-height: 26px;
+    background-color: #610000;
+    padding:0 5px;
+}

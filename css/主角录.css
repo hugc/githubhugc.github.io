@@ -1,0 +1,625 @@
+/*初始化*/
+body,a,li,p,img,textarea{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: 0px;
+}
+/*导航栏*/
+#liTopBar {
+    position: absolute;
+    z-index: 5;
+    top:80px;
+    left: 48px;
+    height: 101px;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+}
+#liTopBar .left-bar {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#liTopBar .right-bar {
+    float: right;
+    height: 101px;
+    margin-top: 37px;
+    margin-right: 136px;
+}
+#liTopBar .right-bar a {
+    float: right;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+#liTopBar .right-bar span {
+    float: right;
+    font-size: 16px;
+    color: #fff;
+    margin-right:20px ;
+    margin-left: 20px;
+}
+
+    /*<!-- 左边主角录开始-->*/
+.main{
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    /*background-color: #666666;*/
+    background: url("../images/bg1_a18d4e8.jpg") ;
+    background-size: cover;
+}
+.main-title{
+    padding-top: 150px;
+    height: 4603px;
+    width: 174px;
+    float: left;
+    border-right:1px solid #5d788c ;
+}
+.main-title .title{
+    display: block;
+    width: 174px;
+    height: 380px;
+    text-indent: -9999px;
+    background: url("../images/title_white_f9950bc.png") no-repeat;
+}
+.main-title .side-bar {
+    width: 174px;
+    height: 360px;
+}
+.main-title .side-bar a {
+    display: block;
+    width: 174px;
+    height: 89px;
+    margin-bottom: 5px;
+    border-right:1px solid #5d788c ;
+}
+.main-title .side-bar a:hover{
+    background-color:#c9b27c ;
+}
+.main-title .side-bar .side-bar1 {
+    background: url("../images/btn_link1_hover_0cc76ef .png");
+}
+.main-title .side-bar .side-bar2 {
+    background: url("../images/btn_link2_f1ea288.png");
+}
+.main-title .side-bar .side-bar3 {
+    background: url("../images/btn_link3_3a68faa .png");
+}
+.main-title .side-bar .side-bar4 {
+    background: url("../images/btn_link4_d2d5cc0.png");
+}
+.main-title .side-bar-dowload {
+    display: none;
+    padding-top: 15px;
+}
+.main-title .side-bar-dowload span {
+    font-size: 12px;
+    float: left;
+    width: 21px;
+    height: 64px;
+    padding-top: 5px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+/*<!-- 左边主角录结束----------------------------------------------------->*/
+
+/*晴名部分开始-----------------------------------------*/
+.main-content {
+    position: relative;
+    left: 50px;
+}
+.main-content .qingMing {
+    padding-top: 150px;
+}
+.main-content .qingMing span {
+    display: block;
+    /*height: 90px;*/
+    font-size: 90px;
+    line-height: 90px;
+    color: #fff;
+    padding-top: 20px;
+    margin-left: 250px;
+}
+.main-content .qingMing .video {
+    width: 128px;
+    height: 80px;
+    border: 2px solid white;
+    position: absolute;
+    left: 470px;
+    top:176px;
+}
+.main-content .qingMing .video-border {
+    position: absolute;
+    width: 60px;
+    top:89px;
+    left:34px;
+    border-bottom: 2px solid white;
+}
+.main-content .intro {
+    position: absolute;
+    top: 371px;
+    left: 225px;
+    width: 577px;
+    height: 336px;
+    background: url("../images/bg_desc_9467c51.jpg");
+}
+.main-content .intro .intro-txt {
+    padding-top: 44px;
+    padding-left: 93px;
+    width: 250px;
+    height: 160px;
+}
+.main-content .intro-txt p {
+    width: 250px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000;
+}
+.main-content .intro a{
+    display: block;
+    margin-top: 36px;
+    margin-left: 93px;
+    width: 180px;
+    height: 53px;
+    background:url("../images/a.png");
+    text-indent: -9000px;
+}
+
+.main-content .intro .intro-title {
+    width: 210px;
+    height: 270px;
+    position: absolute;
+    top: -79px;
+    left: 397px;
+    border: 10px solid #333333;
+}
+ .intro-title-head{
+    display: block;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #ccc;
+    position: absolute;
+     top: 94px;
+     left: 40px;
+}
+.intro-title-foot{
+    display: block;
+    font-size: 50px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #000;
+    position: absolute;
+    top: 133px;
+    left: 46px;
+}
+.intro-title-bottom {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    top: 206px;
+    left: 61px;
+}
+/*.main .bg {*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*left: 50%;*/
+    /*margin-left: -440px;*/
+    /*width: 1400px;*/
+    /*height: 1400px;*/
+/*}*/
+/*.main .bg img {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 100px;*/
+/*}*/
+.longBgc {
+    width: 1400px;
+    height: 1400px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background: url("../images/soul1_0b5e746.png");
+}
+.renBgc {
+    width: 1400px;
+    height: 1400px;
+    position: absolute;
+    top: 60px;
+    right:0px;
+    background: url("../images/role1_c0ceb09.png");
+}
+
+/*--------------------------------*/
+/*--------------------2技能区域开始-------------------*/
+.section2 {
+    position: relative;
+    height: 800px;
+}
+.section2 .section-content {
+    background: url("../images/9001_cb510511.png")50% 0 no-repeat;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.section2 .section-content .wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+.section2 .section-content .section-title {
+    position: absolute;
+    top: 278px;
+    left: 120px;
+}
+.section-content .section-title-head {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #ccc;
+}
+.section-content .section-title-foot {
+    display: block;
+    font-size: 50px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #000;
+}
+.section-content .section-title-line {
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #000;
+    top: 74px;
+    left: -130px;
+}
+.section2 .skill-slide {
+    position: absolute;
+    top: 162px;
+    left: 266px;
+    width: 840px;
+}
+.skill-slide .skill-btn {
+    height: 113px;
+    margin-bottom: 50px;
+    /*background: url("../images/skill_btn_12f3886.png")-2px -2px;*/
+}
+.btnCurrent {
+    background: url("../images/skill_btn_12f3886.png") no-repeat;
+
+}
+.skill-slide .skill-btn a {
+    float: left;
+    padding: 10px;
+    width:80px;
+    height: 93px;
+}
+.temWrap {
+    overflow: hidden;
+    position: relative;
+    width: 480px;
+}
+.skill-wrap {
+    height: 380px;
+    width: 3840px;
+    left: 0px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+.skill-cont {
+    position: relative;
+    margin-left: 30px;
+    float: left;
+    width: 450px;
+    height: 380px;
+}
+.skill-slide .skill-wrap .skill-cont .skill-name {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #333;
+}
+.skill-slide .skill-wrap .skill-cont .skill-desc {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #333;
+}
+.skill-slide .skill-wrap .skill-cont .skill-lv {
+    font-size: 14px;
+    line-height: 32px;
+    color: #333;
+}
+/*--------------------2技能区域结束-------------------*/
+
+/*----------------------3.玩家攻略开始------------------*/
+.section3 {
+    position: relative;
+    height: 700px;
+}
+.section3 .section-content {
+    background: url("../images/bg_section3_3486272.png") 50% 0 no-repeat;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.section3 .section-content .wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+.section3  .wrap .section-title {
+    position: absolute;
+    top: 116px;
+    right: 0;
+}
+.section3  .wrap .section-title .section-title-head {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #ccc;
+}
+.section3  .wrap .section-title .section-title-foot {
+    display: block;
+    font-size: 50px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #000;
+}
+.section3 .section-content .section-title-line {
+    position: absolute;
+    left: -120px;
+    bottom: 20px;
+    width: 80px;
+    height: 5px;
+    background-color: #000;
+}
+.section3 .strategy-grid {
+    position: absolute;
+    top: 254px;
+    right: 0;
+    width: 1120px;
+}
+
+
+.strategy-grid .strategy-btn.first {
+    margin: 0;
+    width: 430px;
+    height: 250px;
+}
+.strategy-grid .strategy-btn {
+    display: block;
+    float: left;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 220px;
+    height: 120px;
+    background-color: #ccc;
+    overflow: hidden;
+}
+.strategy-grid .strategy-btn img {
+    transition: 0.5s linear;
+}
+.strategy-grid .strategy-btn img:hover{
+    transform: scale(1.2);
+
+}
+.strategy-grid .strategy-btn p {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    left: 16px;
+    bottom: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.section3 .btn-group {
+    position: absolute;
+    top: 540px;
+    left: 450px;
+}
+.section3 .btn-group .btn {
+    display: block;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    text-indent: 50px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+.section3 .btn .btn-line {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+}
+.section3 .btn .btn-line  i {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    background-color: #000;
+    transition: all .3s;
+}
+.section3 .btn-group .btn .btn-arrow {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    margin-top: -6px;
+    width: 17px;
+    height: 12px;
+    background: url(../images/btn_arrow_761a996.png) no-repeat;
+}
+/*-------------------------玩家攻略结束-----------*/
+
+/*-----------------------------玩家互动-------------------------*/
+.section5 {
+    position: relative;
+    height: 1000px;
+}
+.section5 .section-content {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.section5 .section-content .wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+.section5 .section-content .section-title {
+    position: absolute;
+    top: 64px;
+    left: 120px;
+}
+.section5 .section-content .section-title-head {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #ccc;
+}
+.section5 .section-content .section-title-foot {
+    display: block;
+    font-size: 50px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #000;
+}
+.section5 .comments {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+/*.section5 .comments .cmt_login_info {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 50%;*/
+    /*margin-left: -518px;*/
+    /*width: 1036px;*/
+    /*text-align: right;*/
+    /*font-size: 14px;*/
+    /*line-height: 20px;*/
+/*}*/
+/*.section5 .comments .cmt_reply {*/
+    /*position: absolute;*/
+    /*top: 30px;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+/*}*/
+
+.section5 .comments-content {
+    width: 1034px;
+    height: 115px;
+    border: 1px solid #efefef;
+    margin: 0 auto;
+}
+.section5 .comments-content textarea {
+    width: 994px;
+    height: 74px;
+    border: none;
+    padding: 20px;
+    font-size: 14px;
+    resize: none;
+}
+.section5 .btnBoder {
+    width: 160px;
+    height: 40px;
+    background-color: #e0c689;
+    position: relative;
+    top: 5px;
+    right:-960px;
+}
+.section5  .btnBoder span {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    width: 160px;
+
+}
+.section5 .comments-txt-title {
+    display: block;
+    font-size: 14px;
+    color: #ec7d7a;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.section5 .txt-content {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    width: 1014px;
+    height: 73px;
+    background-color:#f8f8f8;
+    border: 1px solid #eaeaea;
+    color:#888888;
+    line-height: 60px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.section5 .txt-content .answer {
+    position: absolute;
+    bottom: -13px;
+    right: 15px;
+    font-size: 14px;
+    color: #ec7d7a;
+}
+
+/*页面底部*/
+.footer .footer-con {
+    display: block;
+    width: 808px;
+    height: 71px;
+    background:url("../images/_r2_c2.png") no-repeat;
+    position: absolute;
+    left: 600px;
+    bottom: 80px;
+}
+.footer .footer-con1 {
+    display: block;
+    background: url("../images/41.257Z_r2_c3.png") 275px -3px no-repeat;
+    width: 1200px;
+    height: 45px;
+    position: absolute;
+    top: 100px;
+    left: 483px;
+    border-bottom: 1px solid #E0E0E0;
+}
+

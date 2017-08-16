@@ -1,0 +1,1509 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ .qqqq {
+     width: 100%;
+     height: 910px;
+     float:right;
+    background: #5b543b;
+ }
+ #www {
+     height: 810px;
+     width: 100%;
+     float:right;
+     background: darkgray;
+ }
+.art {
+    width: 100%;
+    height: 891px;
+    position: relative;
+    overflow: hidden;
+    background: url("../images/meishu_bg_cdf30f6.jpg");
+}
+.art-logo {
+    height: 132px;
+    width: 786px;
+    margin: 0 auto;
+    position: relative;
+    /*top:300px;*/
+    display: none;
+    background: url("../images/title2_ef2ebb1.png") no-repeat top center;
+
+}
+/*唯美和风 精品大作左边导航*/
+.left-nav {
+    position:absolute;
+    left:-2px;
+    top:50%;
+    margin-top:-120px;
+    height: 253px;
+    width: 116px;
+    background: url("../images/side_meishu_d.png");
+}
+.left-nav-pic1 {
+    position: absolute;
+    top:10px;
+    height: 101px;
+    width: 102px;
+    cursor: pointer;
+    background: url("../images/index_z_d844bc8 .png") no-repeat -100px -253px;
+
+}
+.left-nav-pic2 {
+    position: absolute;
+    opacity:0;
+    top:66px;
+    left:23px;
+    height: 116px;
+    width: 92px;
+    cursor: pointer;
+    background: url("../images/index_z_d844bc8 .png") no-repeat -92px -136px;
+
+}
+.left-nav-pic3 {
+    position: absolute;
+    opacity:0;
+    bottom:13px;
+    height: 101px;
+    width: 102px;
+    cursor: pointer;
+    background: url("../images/index_z_d844bc8 .png") no-repeat -202px -253px;
+
+}
+
+/*唯美和风 精品大作游戏截图*/
+.game-pic {
+    position: relative;
+    /*left: 50%;*/
+    /*margin-left: -555px;*/
+    margin: 45px 390px;
+    /*top: 215px;*/
+    top: 950px;
+    width: 660px;
+    height: 550px;
+    /*opacity:0;*/
+    z-index: 10;
+    /*background: palegreen;*/
+    /*display:none;*/
+}
+.game-pic-wrap {
+margin-bottom: 10px;
+width: 659px;
+height: 471px;
+position: relative;
+    /*overflow: hidden;*/
+background: url("../images/pic_wrap_6c7a056.png") no-repeat right center;
+}
+.game-pic-wrap div {
+    position: relative;
+    margin: 0 auto;
+    height: 390px;
+    width: 600px;
+    background: papayawhip;
+    overflow: hidden;
+}
+.game-pic-wrap h3 {
+    line-height: 33px;
+    color: #ba9f75;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.game-pic-list {
+position: absolute;
+width: 1100%;
+
+/*background: #fff;*/
+
+
+}
+
+.game-pic-list li {
+    float:left;
+
+}
+.game-pic-list li img {
+    /*float:left;*/
+}
+/*游戏截图下方导航*/
+.game-pic-nav {
+    height: 80px;
+    line-height: 80px;
+    width: 370px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+.game-pic span {
+    height: 21px;
+    width: 21px;
+}
+.game-pic span.left {
+    position: absolute;
+    left:115px;
+    bottom:14px;
+    cursor:pointer;
+    background: url("../images/index_z_d844bc8 .png") no-repeat -850px -150px;
+}
+ .game-pic span.left:hover,
+ .game-pic span.right:hover {
+     transform: rotate(0deg) scale(1.3);
+ }
+.game-pic span.right {
+    position: absolute;
+    right:115px;
+    bottom:14px;
+    cursor: pointer;
+    background: url("../images/index_z_d844bc8 .png") no-repeat -829px -150px;
+
+}
+.game-pic-nav ul {
+    width: 1100%;
+    height: 80px;
+    line-height: 80px;
+    position: absolute;
+    left:-150px;
+}
+.bd-color {
+    transform: rotate(0deg) scale(1.15);
+}
+.game-pic-nav li {
+    /*float:left;*/
+    position: absolute;
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
+    border-radius:50%;
+    overflow: hidden;
+    margin:5px 7px 0;
+
+}
+.game-pic-img {
+    position: absolute;
+    top: -50px;
+    right: -487px;
+}
+/*唯美和风 精品大作原画展示*/
+.show-pic {
+    display: none;
+    position: relative;
+    top: 950px;
+    height: 480px;
+    width: 1090px;
+    margin: 25px auto;
+    border: 1px solid ;
+    z-index: 1;
+    background: url("../images/yuanhua_bg_f21d143.png");
+}
+.scroll-pic {
+    height: 450px;
+    width: 1060px;
+    margin: 15px;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+    top:0;
+    left:0;
+}
+#showPicContent {
+    height: 450px;
+    width: 1522px;
+    position: absolute;
+    background: url("../images/1pp.png");
+    top:0;
+    left:0;
+    z-index: 0;
+}
+.scroll-pic ul {
+    position: absolute;
+    top:0;
+    left:0;
+}
+.scroll-pic-left {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255,255,255,0);
+    z-index: 100;
+    cursor:pointer;
+}
+.scroll-pic-right {
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255,255,255,0);
+    z-index: 100;
+    cursor:pointer;
+}
+.scroll-pic-nav {
+    height: 80px;
+    width: 440px;
+    margin: 80px auto;
+    position: relative;
+
+    padding:0 10px;
+    line-height: 80px;
+}
+.scroll-pic-nav .box-nav {
+    height: 80px;
+    width: 360px;
+    line-height: 80px;
+    margin: 80px auto;
+    position: relative;
+    overflow: hidden;
+}
+.scroll-pic-nav span {
+    height: 21px;
+    width: 21px;
+
+}
+.scroll-pic-nav ul {
+    height: 80px;
+    line-height: 80px;
+    width: 600%;
+    position: absolute;
+    top:50%;
+    margin: -30px 5px 0;
+}
+.scroll-pic-nav span.left {
+    position: absolute;
+    left:10px;
+    top:50%;
+    margin-top:-11px;
+    cursor:pointer;
+    background: url("../images/index_z_d844bc8 .png") no-repeat -850px -150px;
+}
+.scroll-pic-nav span.right {
+    position: absolute;
+    right:10px;
+    top:50%;
+    margin-top:-11px;
+    cursor: pointer;
+    background: url("../images/index_z_d844bc8 .png") no-repeat -829px -150px;
+}
+ .scroll-pic-nav li:hover {
+     transform: rotate(0deg) scale(1.15);
+ }
+ .scroll-pic-nav span.left:hover,
+ .scroll-pic-nav span.right:hover {
+     transform: rotate(0deg) scale(1.3);
+ }
+.scroll-pic-nav li {
+    /*float: left;*/
+    position: absolute;
+    top:0;
+    left:0;
+    margin:0 5px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+ .scroll-pic-nav li img {
+     line-height: 60px;
+ }
+/*唯美和风 精品大作同人作品*/
+.pic-works {
+    width: 1235px;
+    position: relative;
+    top: 950px;
+    margin: 0 auto;
+    display: none;
+}
+.pic-works-top {
+    height: 56px;
+    width: 335px;
+    margin: 10px auto;
+    /*background: red;*/
+}
+.pic-works-top a {
+    float:left;
+    margin-left:15px;
+    width: 152px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 56px;
+    text-align: center;
+    color: #feeecf;
+    background: url("../images/zj_icon_b690ee2.png") no-repeat center center;
+
+}
+.pic-works-top a:hover {
+    color: #a8813c;
+    background: url("../images/zj_icon_ac_72c4a97.png") no-repeat center center;
+}
+.pic-works-pic {
+    height: 530px;
+    width: 100%;
+    /*background: lavenderblush;*/
+}
+/*图片开始*/
+.pic-works-pic {
+    height: 530px;
+    margin-top:50px;
+    width: 1235px;
+    position: relative;
+}
+.pic-works-pic ul li{
+    float:left;
+    /*position: absolute;*/
+    margin-left:15px;
+    margin-bottom:22px;
+    border: 4px solid #d8b991;
+}
+ /*.picWorksPicLi .dx {*/
+     /*position: absolute;*/
+     /*display: block;*/
+     /*background: none;*/
+     /*background: #E5CC56;*/
+     /*transition: 0.6s ease-out;*/
+     /*/!*-ms-transition: 0.6s ease-out;*!/*/
+     /*-webkit-transition: 0.6s ease-out;*/
+     /*-o-transition: 0.6s ease-out;*/
+ /*}*/
+ /*.dx .aaa {*/
+     /*height: 2px;*/
+     /*width: 0;*/
+     /*left: -110%;*/
+     /*top: -2px;*/
+ /*}*/
+ /*.picWorksPicLi:hover .aaa {*/
+     /*width: 100%;*/
+     /*left: -2px;*/
+ /*}*/
+
+
+
+.pic-works-pic .ul-pic1 img{
+    height: 136px;
+ }
+.pic-works-pic a {
+    display: block;
+    margin-right: 9px;
+    margin-left: 9px;
+    margin-bottom: 20px;
+    border: 4px solid #d8b991;
+    position: relative;
+}
+.pic-works-pic .left {
+    float: left;
+    height: 530px;
+    width: 461px;
+    /*background: palegreen;*/
+}
+.pic-works-pic .right {
+    float: right;
+    width: 768px;
+    height: 530px;
+
+}
+.pic-works-pic .right .pic3 img{
+    height: 136px;
+}
+.pic-works-pic .right .pic3 {
+    margin :0 17px;
+}
+.pic-works-pic .right li {
+    display: inline-block;
+    margin-right: 9px;
+    margin-left: 9px;
+    margin-bottom: 20px;
+    border: 4px solid #d8b991;
+    position: relative;
+}
+
+
+ /*=================豪华声优 大师助阵开始*/
+
+.sound-bg {
+    height: 891px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url("../images/shengyou_bg_61ae7f9.jpg");
+}
+
+
+
+ /*===========豪华声优 大师助阵左边导航*/
+ .sound-left-nav {
+     position:absolute;
+     left:-2px;
+     top:50%;
+     margin-top:-120px;
+     height: 253px;
+     width: 116px;
+     background: url("../images/side_cv_209e020.png");
+ }
+ .sound-nav-pic1 {
+     position: absolute;
+     top:10px;
+     height: 101px;
+     width: 102px;
+     cursor: pointer;
+     background: url("../images/index_z_d844bc8 .png") no-repeat -321px -101px;
+
+ }
+ .sound-nav-pic2 {
+     position: absolute;
+     top:66px;
+     left:23px;
+     height: 116px;
+     width: 92px;
+     cursor: pointer;
+     opacity:0;
+     background: url("../images/index_z_d844bc8 .png") no-repeat -0 -137px;
+
+ }
+ .sound-nav-pic3 {
+     position: absolute;
+     bottom:13px;
+     height: 101px;
+     width: 102px;
+     cursor: pointer;
+     opacity:0;
+     background: url("../images/index_z_d844bc8 .png") no-repeat -423px -102px;
+
+ }
+ /*===============豪华声优 大师助阵logo*/
+ .sound-art-logo {
+     height: 132px;
+     width: 786px;
+     margin: 0 auto;
+     position: relative;
+     top: 60px;
+     background: url("../images/title4_f471cce.png") no-repeat top center;
+ }
+ /*==============主角声优*/
+ .sound-content {
+     height: 685px;
+     width: 1240px;
+     position: relative;
+     /*top:60px;*/
+     top:1000px;
+     margin:0 auto ;
+     display: none;
+ }
+ .sound-top {
+     height: 56px;
+     width: 335px;
+     margin: 35px auto 0;
+ }
+ .sound-top a {
+     float:left;
+     margin-left:15px;
+     width: 152px;
+     height: 56px;
+     font-size: 24px;
+     line-height: 56px;
+     text-align: center;
+     color: #feeecf;
+     background: url("../images/zj_icon_b690ee2.png") no-repeat center center;
+
+ }
+ .sound-top .bg-top {
+     color: #a8813c;
+     background: url("../images/zj_icon_ac_72c4a97.png") no-repeat center center;
+ }
+
+ /*======================主角内容*/
+
+ .lead-content {
+     position: relative;
+     width: 100%;
+     height: 520px;
+     margin-top:70px;
+     /*display: none;*/
+ }
+ .lead-content li>a {
+     height: 356px;
+     width: 259px;
+     display: block;
+     overflow: hidden;
+     margin: 10px 12px 0;
+ }
+.lead-content ul li {
+    float:left;
+    position: relative;
+    height: 442px;
+    width: 279px;
+    margin: 0 15px;
+    transition: 1s ease;
+    background: url("../images/card_bg2_2330a9b.png") no-repeat center center;
+}
+.lead-content ul span {
+    position: absolute;
+    display: block;
+    background: none;
+    background: #E5CC56;
+    transition: 0.6s ease-out;
+    /*-ms-transition: 0.6s ease-out;*/
+    -webkit-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+}
+
+ .lead-top {
+     height: 2px;
+     width: 0;
+     left: -110%;
+     top: -2px;
+ }
+
+ .lead-content ul li:hover .lead-top {
+     width: 100%;
+     left: -2px;
+ }
+
+ .lead-right {
+     width: 2px;
+     height: 0;
+     top:-110%;
+     right:-2px;
+ }
+ .lead-content ul li:hover .lead-right {
+     height: 100%;
+     top:-2px;
+ }
+ .lead-bottom {
+     width: 0;
+     height: 2px;
+     right:-110px;
+     bottom:-2px;
+ }
+ .lead-content ul li:hover .lead-bottom {
+     width: 100%;
+     right: -2px;
+ }
+ .lead-left {
+     height: 0;
+     width: 2px;
+     bottom:-110px;
+     left:-2px;
+ }
+ .lead-content ul li:hover .lead-left {
+     height: 100%;
+     bottom:-2px;
+ }
+
+
+
+ .lead-content ul li:hover {
+     transform: rotate(0deg) scale(1.15);
+ }
+
+
+
+
+
+
+
+
+
+
+
+.lead-name {
+    /*width: 100%;*/
+    height: 60px;
+    padding:10px 25px;
+    /*background: palevioletred;*/
+}
+
+ .lead-content .lead-name h4 {
+     font-size: 22px;
+     margin-bottom: 5px;
+ }
+
+ .lead-content .lead-name p {
+     font-size: 16px;
+     line-height: 18px;
+ }
+
+ /*================式神内容*/
+ .lead-deity {
+     width: 100%;
+     height: 520px;
+     margin-top:35px;
+     position: relative;
+     display: none;
+     /*background: paleturquoise;*/
+ }
+
+ .lead-deity li>a {
+     height: 356px;
+     width: 259px;
+     display: block;
+     overflow: hidden;
+     margin: 10px 12px 0;
+ }
+ .lead-deity ul li {
+     position: absolute;
+     height: 442px;
+     width: 279px;
+     margin: 0 10px;
+     display: inline-block;
+     /*top:100px;*/
+ /*left:200px;*/
+     background: url("../images/card_bg2_2330a9b.png") no-repeat center center;
+ }
+
+ .lead-deity-left ,
+ .lead-deity-right {
+     height: 112px;
+     width: 76px;
+     cursor:pointer;
+     position: absolute;
+ }
+ .lead-deity-left {
+     left:30px;
+     top:180px;
+     z-index: 10;
+     /*opacity:0;*/
+     background: url("../images/prev.png");
+ }
+ .lead-deity-right {
+     right:30px;
+     top:180px;
+     z-index: 11;
+     /*opacity: 0;*/
+     background: url("../images/next.png");
+ }
+ .lead-deity .lead-name h4 {
+     font-size: 22px;
+     margin-bottom: 5px;
+ }
+
+ .lead-deity .lead-name p {
+     font-size: 16px;
+     line-height: 18px;
+ }
+
+/*=================声优阵容*/
+ .battle-array {
+     height: 685px;
+     width: 1200px;
+     position: relative;
+     top:60px;
+     margin:0 auto ;
+     /*background: palevioletred;*/
+     display: none;
+ }
+
+ .battle-array-con {
+     width: 618px;
+     height: 690px;
+     position: absolute;
+     right:-40px;
+     z-index: 2;
+     background: url("../images/cv_side_c45dd55.png");
+ }
+
+ .battle-array-l {
+     height: 396px;
+     width: 700px;
+     position: absolute;
+     top:150px;
+     left:0;
+     /*opacity:0.7;*/
+     z-index: 1;
+     background: url("../images/cv_video_bg_9c46b03.jpg");
+ }
+ .battle-array-l span {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: #000;
+     opacity: 0.4;
+ }
+ .battle-array-l em {
+     position: absolute;
+     left:50%;
+     margin-top:-30px;
+     margin-right:-30px;
+     top:50%;
+     height: 64px;
+     width: 64px;
+     opacity: 1;
+     /*z-index: 4;*/
+     background: url("../images/index_z_d844bc8 .png") no-repeat -559px -605px;
+ }
+ .battle-array-l i {
+     position: absolute;
+     top:24px;
+     left:27px;
+     height: 20px;
+     width: 20px;
+     background: url("../images/index_z_d844bc8 .png") no-repeat -869px -149px;
+ }
+
+
+/*==========游戏配乐*/
+ .game-music {
+     height: 685px;
+     width: 1200px;
+     position: relative;
+     top:60px;
+     margin:0 auto ;
+     display: none;
+     /*background: palevioletred;*/
+ }
+
+ .game-music-r {
+     width: 515px;
+     height: 696px;
+     background: url("../images/mml_side_3344401.png");
+     position: absolute;
+     right:0;
+ }
+
+ .game-music-l {
+     width: 683px;
+     height: 533px;
+     position: absolute;
+     top:50px;
+     left:20px;
+     background: url("../images/mml_bg_79de3b6.png");
+ }
+
+ .game-music-ml {
+     float:left;
+     margin-top: 10px;
+     height: 483px;
+     width: 323px;
+     background: url("../images/mml_8e15f28.png");
+ }
+
+ .game-music-text {
+     width: 338px;
+     height: 480px;
+     float:right;
+     padding:0 6px;
+     margin-right:5px;
+ }
+ .game-music-text h5 {
+     font-size: 24px;
+     line-height: 85px;
+     font-weight: 900;
+ }
+
+ .game-music-text p {
+     font-size: 22px;
+     line-height: 20px;
+ }
+
+
+
+ /*================豪华声优 大师助阵结束*/
+
+
+
+ /*================探索收集 丰富玩法开始*/
+
+ .explore {
+     height: 996px;
+     width: 100%;
+     position: relative;
+     background: url("../images/wanfa_bg_8d29f35.jpg");
+ }
+
+ /*===============探索收集 丰富玩法左边导航*/
+ .explore-left-nav {
+     position:absolute;
+     left:-2px;
+     top:50%;
+     margin-top:-120px;
+     height: 253px;
+     width: 116px;
+     background: url("../images/side_wanfa_fb6d05a.png");
+ }
+ .explore-nav-pic1 {
+     position: absolute;
+     top:10px;
+     height: 101px;
+     width: 102px;
+     cursor: pointer;
+     opacity:1;
+     background: url("../images/index_z_d844bc8 .png") no-repeat 1px -252px;
+
+ }
+ .explore-nav-pic2 {
+     position: absolute;
+     top:66px;
+     left:23px;
+     height: 116px;
+     width: 92px;
+     cursor: pointer;
+     opacity:0;
+     background: url("../images/index_z_d844bc8 .png") no-repeat -229px 1px;
+
+ }
+ .explore-nav-pic3 {
+     position: absolute;
+     bottom:13px;
+     height: 101px;
+     width: 102px;
+     cursor: pointer;
+     opacity:0;
+     background: url("../images/index_z_d844bc8 .png") no-repeat -424px -1px;
+
+ }
+
+ /*探索收集 丰富玩法中间标题*/
+.explore-nav {
+    position: absolute;
+    left:50%;
+
+    margin-left: -271px;
+    /*right:50%;*/
+    top:90px;
+    height: 99px;
+    width: 615px;
+    background: url("../images/title3_528a9ed.png");
+    /*margin: 20px auto 0;*/
+}
+
+
+
+
+
+
+
+
+
+
+ /*探索收集 丰富玩法 特色玩法开始*/
+.explore-play {
+    height: 600px;
+    width: 1200px;
+    /*background: palegoldenrod;*/
+    position: relative;
+    margin:0 auto ;
+    /*top:300px;*/
+    top:1000px;
+    display: none;
+}
+
+.explore-play-con {
+    position: relative;
+    height: 471px;
+    width: 659px;
+    background: url("../images/pic_wrap_6c7a056.png");
+    margin:0 auto ;
+    top:60px;
+    overflow: hidden;
+}
+
+.explore-play-left {
+    height: 280px;
+    width: 210px;
+    /*background: palegreen;*/
+    position: absolute;
+    top:160px;
+    left:30px;
+}
+ .explore-play-left .icon1 {
+     position: absolute;
+     top:0;
+     right:0;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+ .explore-play-left .icon2 {
+     position: absolute;
+     top:71px;
+     left:0;
+     z-index: 20;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+ .explore-play-left .icon3 {
+     position: absolute;
+     bottom:0;
+     right:0;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+
+ .explore-play-right {
+     height: 280px;
+     width: 210px;
+     /*background: royalblue;*/
+     position: absolute;
+     top: 160px;
+     right:30px;
+ }
+
+ .explore-play-right .icon4 {
+     position: absolute;
+     top:0;
+     left:0;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+ .explore-play-right .icon5 {
+     position: absolute;
+     top:71px;
+     right:0;
+     z-index: 30;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+ .explore-play-right .icon6 {
+     position: absolute;
+     bottom:0;
+     left:0;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+
+.play-con-lb {
+    height: 367px;
+    width: 535px;
+    position: absolute;
+    left:50%;
+    margin-left:-268px;
+    top:50px;
+    overflow: hidden;
+
+}
+ .play-con-lb ul {
+     width: 600%;
+     position: absolute;
+     top:0;
+     left:0;
+ }
+ .play-con-lb li {
+     float:left;
+     /*position: absolute;*/
+     /*top:0;*/
+     /*left:0;*/
+ }
+.play-con-floot {
+    width: 100%;
+    height: 50px;
+    /*background: khaki;*/
+    position: absolute;
+    bottom:0;
+    font-size: 22px;
+    line-height: 50px;
+    overflow: hidden;
+}
+ .play-con-floot ul {
+     position: absolute;
+     top:0;
+     left:60px;
+ }
+
+
+
+
+
+
+
+ /*探索收集 丰富玩法 特色副本*/
+.explore-copy {
+    height: 627px;
+    width: 1200px;
+    position: relative;
+    margin:0 auto ;
+    top:300px;
+    display: none;
+}
+
+.copy-left {
+    height: 627px;
+    width: 47px;
+    background: url("../images/wanfa_stick_left_648842c.png");
+    position: absolute;
+    top:0;
+    left:55px;
+}
+
+.copy-right {
+    height: 627px;
+    width: 47px;
+    background: url("../images/wanfa_stick_right_fe92266.png");
+    position: absolute;
+    top:0;
+    right:55px;
+}
+
+.copy-content {
+    width: 1012px;
+    height: 544px;
+    background: url("../images/wanfa_stick_bg_62c66af.png");
+    position: absolute;
+    left:50%;
+    margin-left:-506px;
+    top:50%;
+    margin-top:-272px;
+}
+.copy-content-pic {
+    height: 491px;
+    width: 945px;
+    position: absolute;
+    top:50%;
+    margin-top:-245px;
+    left:50%;
+    margin-left:-472px;
+    background: url("../images/map_b548424.png");
+}
+ .copy-content-pic span {
+     width: 35px;
+     height: 138px;
+     position: absolute;
+     background: url("../images/map_name_box_6178968.png");
+ }
+
+ .copy-content-pic em {
+     width: 35px;
+     height: 138px;
+     position: absolute;
+     background: url("../images/map_name_box_6178968.png");
+ }
+ .copy-content-pic p {
+     position: absolute;
+     height: 35px;
+     width: 150px;
+     background-color: rgba(0,0,0,0.5);
+     color:#fff;
+     z-index: 20;
+     padding: 6px;
+     display: none;
+ }
+ .copy-content-pic .p1 {
+     bottom:-105px;
+     left:-80px;
+     height: 90px;
+ }
+ .copy-content-pic .p2 {
+     bottom:50px;
+     left:40px;
+     height: 50px;
+ }
+ .copy-content-pic .p3 {
+     bottom:45px;
+     left:45px;
+     height: 55px;
+ }
+ .copy-content-pic .p4 {
+     bottom:45px;
+     left:40px;
+     height: 105px;
+ }
+ .copy-content-pic .p5 {
+     bottom:5px;
+     left:45px;
+     height: 105px;
+ }
+ .copy-content-pic .p6 {
+     bottom:80px;
+     left:40px;
+     height: 55px;
+ }
+ .copy-content-pic h5 {
+     font-size: 20px;
+     color:yellow;
+     margin: 20px 10px 0;
+ }
+
+ .copy-content-icon {
+     width: 35px;
+     height: 138px;
+     position: absolute;
+     top:166px;
+     left:88px;
+     cursor: pointer;
+     background: url("../images/map_name_box_6178968.png");
+ }
+ .copy-content-icon2 {
+     width: 35px;
+     height: 138px;
+     position: absolute;
+     top:45px;
+     left:370px;
+     cursor: pointer;
+     background: url("../images/map_name_box_6178968.png");
+ }
+
+ .copy-content-icon3 {
+     width: 35px;
+     height: 138px;
+     position: absolute;
+     top:220px;
+     left:180px;
+     cursor: pointer;
+     background: url("../images/map_name_box_6178968.png");
+ }
+
+ .copy-content-icon4 {
+     width: 35px;
+     height: 138px;
+     position: absolute;
+     top:200px;
+     left:450px;
+     cursor: pointer;
+     background: url("../images/map_name_box_6178968.png");
+ }
+
+ .copy-content-icon5 {
+     width: 35px;
+     height: 138px;
+     position: absolute;
+     top:300px;
+     left:550px;
+     cursor: pointer;
+     background: url("../images/map_name_box_6178968.png");
+ }
+
+ .copy-content-icon6 {
+     width: 35px;
+     height: 138px;
+     position: absolute;
+     top:170px;
+     left:730px;
+     cursor: pointer;
+     background: url("../images/map_name_box_6178968.png");
+ }
+
+.copy-icon-qz,
+.copy-icon-qz2,
+.copy-icon-qz3,
+.copy-icon-qz4,
+.copy-icon-qz5,
+.copy-icon-qz6 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom:30px;
+    right:-50px;
+    background: url("../images/index_z_d844bc8 .png") no-repeat -684px 0;
+}
+
+ /*探索收集 丰富玩法 新手指南*/
+ .explore-guide {
+     height: 600px;
+     width: 1200px;
+     position: relative;
+     margin:0 auto ;
+     top:300px;
+     display: none;
+ }
+
+
+ .guide-content {
+    height: 611px;
+    width: 1052px;
+    position: absolute;
+    top:50%;
+    margin-top: -240px;
+    left:50%;
+    margin-left:-545px;
+    background: url("../images/explore_bg_2819bfb.png");
+}
+
+ .guide-pic {
+     height: 567px;
+     width: 1005px;
+     position: absolute;
+     top:50%;
+     margin-top: -284px;
+     left:50%;
+     margin-left: -503px;
+     background: url("../images/explre_8fc230a.png");
+ }
+
+
+
+.guide-content span {
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    transform:scale(1.15);
+    background: url("../images/index_z_d844bc8 .png") no-repeat -623px -606px;
+}
+ .guide-content .guide-icon1 {
+     bottom:50px;
+     left:65px;
+ }
+ .guide-content .guide-icon2 {
+     bottom:50px;
+     left:175px;
+ }
+ .guide-content .guide-icon3 {
+     bottom:50px;
+     left:285px;
+ }
+ .guide-content .guide-icon4 {
+     bottom:50px;
+     left:395px;
+ }
+ .guide-content .guide-icon5 {
+     bottom:50px;
+     left:505px;
+ }
+ .guide-content .guide-icon6 {
+     bottom:50px;
+     left:615px;
+ }
+ .guide-content .guide-icon7 {
+     bottom:50px;
+     left:725px;
+ }
+ .guide-content .guide-icon8 {
+     bottom:50px;
+     left:835px;
+ }
+ .guide-content .guide-icon9 {
+     top:10px;
+     left:30px;
+ }
+ .guide-content .guide-icon10 {
+     top:10px;
+     left:480px;
+ }
+ .guide-content .guide-icon11 {
+     top:10px;
+     left:630px;
+ }
+ .guide-content .guide-icon12 {
+     top:10px;
+     right:160px;
+ }
+
+ .guide-content .guide-icon13 {
+     top:85px;
+     right:460px;
+ }
+ .guide-content .guide-icon14 {
+     top:140px;
+     right:120px;
+ }
+ .guide-content .guide-icon15 {
+     top:180px;
+     right:410px;
+ }
+
+
+
+ /*探索收集 丰富玩法 新手结束*/
+
+
+
+ /*探索收集 丰富玩法结束*/
+
+/*底部信息*/
+.foot {
+    height: 185px;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    border:1px solid #000;
+}
+
+.friendlink {
+    height: 24px;
+    width: 600px;
+    margin:30px auto 0;
+}
+.foot .info {
+    position: absolute;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    width: 600px;
+}
+ .foot .info li {
+     float:left;
+     margin-right:15px;
+     font-size: 20px;
+ }
+
+ .foot .info a {
+     font-size: 20px;
+     height: 24px;
+ }
+ .foot .info a:hover {
+     color:#fff;
+     text-decoration: underline;
+ }
+
+ .foot .info span {
+     float:left;
+     height: 24px;
+     width: 24px;
+     margin-right: 5px;
+ }
+
+ .foot .info .wx {
+     background: url("../images/wx.png") no-repeat ;
+ }
+ .foot .info .yx {
+     background: url("../images/yx.png") no-repeat ;
+ }
+ .foot .info .qq {
+     background: url("../images/qq.png") no-repeat ;
+ }
+ .foot .info .xl {
+     background: url("../images/xl.png") no-repeat ;
+ }
+ .foot .info .gd {
+     background: url("../images/gd.png") no-repeat ;
+ }
+
+.copyright {
+    width: 920px;
+    height: 60px;
+    line-height: 60px;
+    margin:45px auto;
+    position: relative;
+}
+
+.copyright-left {
+    height: 60px;
+    float:left;
+    margin-top:-20px;
+    /*background: papayawhip;*/
+}
+.copyright-right {
+    width: 640px;
+    float:right;
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+.links-info li {
+    float:left;
+    font-size: 16px;
+    margin-right: 6px;
+    height: 24px;
+    color:#fff;
+}
+ .links-info a{
+     color:#fff;
+ }
+ .links-info a:hover {
+     transform:scale(1.15);
+     text-decoration: underline;
+ }
+
+ .copyright-right p {
+     float:left;
+     font-size: 16px;
+     margin-top: 10px;
+     color:#fff;
+ }
+
+.copyright-right .kh {
+    position: absolute;
+    height: 26px;
+    width: 200px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    background: #610000;
+    right:20px;
+    bottom:15px;
+    color:#fff;
+}
+
+ .copyright-right .kh:hover {
+     text-decoration: underline;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-fixed {
+    position: fixed;
+    top:280px;
+    right:0;
+    height: 210px;
+    width: 100px;
+    z-index: 100;
+    /*display: none;*/
+    /*background: paleturquoise;*/
+
+}
+ .right-fixed span {
+     position: absolute;
+     height: 25px;
+     width: 25px;
+     z-index: 100;
+     cursor:pointer;
+     background: url("../images/index_z_d844bc8 .png") no-repeat -811px -124px;
+     /*background: url("../images/index_z_d844bc8 .png") no-repeat -786px -124px;*/
+
+ }
+ .right-fixed span:hover {
+     /*background: url("../images/index_z_d844bc8 .png") no-repeat -786px -124px;*/
+
+ }
+ .right-fixed i {
+     position: absolute;
+    display: none;
+     color:#fff;
+ }
+
+ .right-fixed .fixed-r1 {
+     top:10px;
+     right:20px;
+ }
+ .right-fixed .fixed-r1 i {
+     left:-35px;
+     top:5px;
+ }
+ .right-fixed .fixed-r2 {
+     top:48px;
+     right:20px;
+ }
+ .right-fixed .fixed-r2 i {
+     left:-35px;
+     top:5px;
+ }
+ .right-fixed .fixed-r3 {
+     top:88px;
+     right:20px;
+ }
+ .right-fixed .fixed-r3 i {
+     left:-35px;
+     top:5px;
+ }
+ .right-fixed .fixed-r4 {
+     top:134px;
+     right:20px;
+ }
+ .right-fixed .fixed-r4 i {
+     left:-35px;
+     top:5px;
+ }
+ .right-fixed .fixed-r5 {
+     top:176px;
+     right:20px
+
+ }
+ .right-fixed .fixed-r5 i {
+     left:-35px;
+     top:5px;
+ }
+
+
+
+
+
+

@@ -1,0 +1,1026 @@
+/*初始化*/
+*{
+    padding: 0;
+    margin: 0;
+}
+ol,ul,dl,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.w{
+    width: 1260px;
+    margin: 0 auto;
+}
+body {
+    font: 14px/150% Arial,"microsoft yahei", Verdana, "\5b8b\4f53"; /*unitedCode的写法，宋体的写法*/
+    color: #666; /*150%基于当前字体尺寸的百分比行间距*/
+}
+
+
+
+/*游戏特效页面头部部分开始*/
+
+.head{
+    width: 100%;
+    height: 65px;
+    background-color: #080915;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+}
+.head .head-main{
+    height: 35px;
+    padding:15px 0;
+    position: relative;
+}
+.head ul{
+    width: 990px;
+    height: 35px;
+    float: left;
+}
+.head ul li{
+    width: 163px;
+    height: 35px;
+    font: italic  20px/35px "microsoft yahei";
+    float: left;
+    text-align: center;
+    border-right: 1px dotted #8282bd;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.head ul li a{
+    display: inline-block;
+    width: 80px;
+    color: #8282bd;
+    margin-left: 5px;
+    position: absolute;
+    left: 33px;
+}
+
+.head ul li span{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    position: absolute;
+    top: 8px;
+    left: 40px;
+    /*z-index: -1;*/
+    opacity: 0;
+    background: url("images/index_z_d844bc8.png") -821px -53px no-repeat;
+}
+
+.head ul li:first-child span{
+    opacity: 1;
+    position: absolute;
+    left: 30px;
+}
+
+.head ul li:last-child{
+    width: 164px;
+    height: 35px;
+    font: italic  20px/35px "microsoft yahei";
+    float: left;
+    text-align: center;
+    border: 0;
+}
+
+.head-loginChaining{
+    width: 230px;
+    height: 33px;
+    /*float: right;*/
+    /*margin-top: 7px;*/
+    /*position: relative*/
+    background:url("images/gzh_bg_7a090c1.png") no-repeat;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.head-loginChaining .attention{
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: 15px;
+    color:#fff;
+}
+.head-loginChaining a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    /*position: relative;*/
+}
+.head-loginChaining .tencent{
+    /*display: -webkit-box;*/
+    /*-webkit-box-align: center;*/
+    /*-webkit-box-pack: center;*/
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    text-align: center;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 105px;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+    /*z-index: 3;*/
+    background: url("images/index_z_d844bc8 (1).png") -785px -150px no-repeat;
+
+}
+
+.head-loginChaining .tencent-two{
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1px;
+    /*z-index: -5;*/
+    background: url("images/index_z_d844bc8 .png") -733px -88px no-repeat;
+
+}
+.head-loginChaining .tencent-three{
+    /*display: none;*/
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 96px;
+    /*z-index: 20;*/
+
+}
+.head-loginChaining .weixin{
+    position: absolute;
+    top: 0;
+    left: 3px;
+    margin-top: 5px;
+    /*z-index: 20;*/
+    background: url("images/index_z_d844bc8 (1).png") -881px -51px no-repeat;
+
+}
+.head-loginChaining .weixin-two{
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1px;
+    /*z-index: -5;*/
+    background: url("images/index_z_d844bc8 .png") -767px -90px no-repeat;
+}
+
+.head-loginChaining .weixin-three{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 127px;
+    margin-top: -1px;
+}
+
+.head-loginChaining .sina{
+    position: absolute;
+    top: 0;
+    left: 155px;
+    margin-top: 5px;
+    background: url("images/index_z_d844bc8 (1).png") -760px -150px no-repeat;
+
+}
+
+.head-loginChaining .tieba{
+    position: absolute;
+    top: 0;
+    left: 180px;
+    margin-top: 5px;
+    background: url("images/index_z_d844bc8 (1).png") -863px -124px no-repeat;
+
+}
+
+
+.head-loginChaining .tencent-link{
+    width: 135px;
+    height: 130px;
+    color: #fff;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: #ca1545;
+    position: absolute;
+    top: 33px;
+    z-index: 5;
+    border-radius: 5px;
+    display: none;
+    opacity: 0.7;
+
+}
+.head-loginChaining .weixin-link{
+    width: 219px;
+    height: 67px;
+    padding: 10px 10px;
+    background-color: #ca1545;
+    position: absolute;
+    top: 32px;
+    z-index: 5;
+    right: 69px;
+    display: none;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+.weixin-link .weixin-D-barcode{
+    float: left;
+}
+.weixin-link .weixin-D-barcode img{
+    width: 67px;
+    height: 67px;
+}
+
+.weixin-link .weixin-links{
+    /*padding: 10px 0;*/
+    float: left;
+    color: #fff;
+}
+
+.weixin-link .weixin-links strong{
+    font-size: 16px;
+}
+
+.weixin-link .weixin-links p{
+    font-size: 12px;
+    margin-top: 2px;
+}
+/*游戏特效页面头部部分结束*/
+
+
+/*第一个页面开始*/
+.main-page{
+    width: 100%;
+    height: 912px;
+    position: relative;
+    overflow: hidden;
+}
+.main-page .main-page-leftdoor{
+    width: 50%;
+    height: 912px;
+    position: absolute;
+    background: url("images/door1_2b58326.jpg") repeat-x  ;
+    background-size: cover;
+    /*top: -65px;*/
+    left: -50%;
+}
+.main-page .main-page-leftdoor img{
+    /*position: absolute;*/
+    /*left: -960px;*/
+}
+
+.main-page .main-page-rightdoor{
+    width: 50%;
+    height: 912px;
+    position: absolute;
+    background: url("images/door2_ae041a0.jpg") repeat-x  ;
+    background-size: cover;
+    /*top: -65px;*/
+    right: -50%;
+
+
+
+}
+
+.main-page .main-page-rightdoor img{
+    /*position: absolute;*/
+    /*right: -960px;*/
+}
+
+.main-page .main-page-bigImg{
+    width: 1424px;
+    height: 927px;
+    position: absolute;
+    /*top: -80px;*/
+    left: 10%;
+    /*z-index: 1;*/
+    display: none;
+    background: url("images/person_b924fab.png");
+}
+.main-page .main-page-flowers{
+    width: 100%;
+    height: 863px;
+    position: absolute;
+    top: -20px;
+    left: auto;
+    z-index: 2;
+    background: url("images/flower_8fc3d9f.png");
+}
+
+.main-page .main-page-flowers2{
+    width: 100%;
+    height: 718px;
+    position: absolute;
+    bottom: 50px;
+    left: 2%;
+    z-index: 2;
+    background: url("images/flower_move_6b91c7a.png");
+}
+
+.main-page .cloud1{
+    width: 397px;
+    height: 116px;
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+    background: url("images/cloud1_6dc33a8.png");
+}
+
+.main-page .cloud2{
+    width: 397px;
+    height: 116px;
+    position: absolute;
+    top: 150px;
+    right: -95px;
+    background: url("images/cloud2_55ce870.png");
+}
+
+.main-page .theme-pic{
+    width: 786px;
+    height: 132px;
+    position: absolute;
+    bottom: 340px;
+    left: 600px;
+    z-index: 2;
+    background: url("images/slogon_8064a10.png");
+    display: none;
+}
+.main-page .circle{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 20px;
+    left: 360px;
+    background: url("images/index_z_d844bc8.png") -558px -606px;
+    cursor: pointer;
+}
+
+.main-page .circle .triangle{
+    display: block;
+    width: 12px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 22px;
+    background: url("images/index_z_d844bc8.png") -870px -150px;
+}
+
+.main-page .app-links{
+    width: 291px;
+    height: 125px;
+    padding: 5px;
+    position: absolute;
+    bottom: 150px;
+    left: 801px;
+    /*z-index: 3;*/
+    background: url("images/download_bg_38d204a.png") no-repeat;
+    cursor: pointer;
+    display: none;
+}
+
+.app-links .D-baderco{
+    width: 110px;
+    height: 135px;
+    position: relative;
+    top: -5px;
+    left: 0px;
+}
+
+.app-links .D-baderco .lines{
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    width: 109px;
+    z-index: 1;
+    
+}
+.D-baderco #badercoBox{
+    display: block;
+    width: 109px;
+    height: 109px;
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    cursor: pointer;
+}
+.app-links .D-baderco .D-baderco-pic{
+    width: 109px;
+    height: 109px;
+    position: absolute;
+    /*top: 15px;*/
+    /*left: 5px;*/
+}
+
+.app-links .apps{
+    width: 190px;
+    height: 115px;
+    position: absolute;
+    top: 10px;
+    right: -14px;
+}
+.app-links .iosApp{
+    display: block;
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 3;
+    background: url("images/index_z_d844bc8.png") -142px -676px;
+}
+
+
+.app-links .andApp{
+    display: block;
+    width: 170px;
+    height: 50px;
+    background: url("images/index_z_d844bc8.png") -483px -676px;
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    z-index: 3;
+}
+
+/*第一个页面结束*/
+
+
+
+/*第二个页面开始*/
+
+#second-page{
+    height: 891px;
+    position: relative; 
+    background: url("images/juqing_bg_02c1c18.jpg") no-repeat;
+}
+
+#second-page #left-circleBtn{
+    width: 116px;
+    height: 253px;
+    position: absolute;
+    left: -2px;
+    top: 319px;
+    background: url("images/side_juqing_0b1b064.png") no-repeat;
+}
+
+#second-page #left-circleBtn #worldView{
+    width: 102px;
+    height: 102px;
+    position: absolute;
+    left: 1px;
+    top: 10px;
+    background:url("images/index_z_d844bc8.png") -321px 0 no-repeat;
+    cursor: pointer;
+    /*z-index: -5;*/
+    opacity: 1;
+}
+
+
+/*#left-circleBtn #testbox3{*/
+    /*width: 81px;*/
+    /*height: 81px;*/
+    /*position: absolute;*/
+    /*background-color: red;*/
+    /*left: 0;*/
+    /*top: 12px;*/
+/*}*/
+#second-page #left-circleBtn #protagonist{
+    width: 102px;
+    height: 114px;
+    position: absolute;
+    left: 25px;
+    top: 69px;
+    background:url("images/index_z_d844bc8.png") -185px -138px no-repeat;
+    display: none;
+    cursor: pointer;
+}
+
+#second-page #left-circleBtn #testbox1{
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    left: 28px;
+    top: 81px;
+    cursor: pointer;
+}
+
+#second-page #left-circleBtn #theatre{
+    width: 102px;
+    height: 107px;
+    position: absolute;
+    left: -3px;
+    top: 136px;
+    background:url("images/index_z_d844bc8.png") -303px -250px no-repeat;
+    display: none;
+    cursor: pointer;
+}
+
+#second-page #left-circleBtn #testbox2{
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+#second-page #title{
+    width: 538px;
+    height: 107px;
+    position: absolute;
+    top: 50px;
+    margin-left: 50%;
+    left: -269px;
+    background: url("images/title.png") no-repeat;
+}
+
+/*世界观*/
+#second-page #intro{
+    height: 891px;
+    position: absolute;
+    /*bottom: -891px;;*/
+    /*z-index: -1;*/
+    left: 315px;
+    top: 891px;
+    display: block;
+}
+#second-page #intro-video{
+    width: 700px;
+    height: 396px;
+    position: absolute;
+    left: 60px;
+    top: 200px;
+    background: url("images/shijieguan_video_bg_d2deb38.jpg") no-repeat;
+}
+#second-page #intro-video-bro{
+    width: 700px;
+    height: 396px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.4;
+
+}
+
+#second-page #intro-video .circle{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    margin-left: 50%;
+    left: -32px;
+    top: 166px;
+    background: url("images/index_z_d844bc8.png") -558px -606px;
+}
+
+#second-page #intro-video .triangle{
+    display: block;
+    width: 12px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 22px;
+    background: url("images/index_z_d844bc8.png") -870px -150px;
+}
+#second-page #intro img{
+    position: absolute;
+    right: 70px;
+    bottom: 50px;
+}
+
+#second-page #intro #intro-words{
+    width: 650px;
+    height: 89px;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 30px;
+    position: absolute;
+    left: 55px;
+    bottom: 130px;
+    background: url("images/shijiehuan_txt_e88a42e.png") no-repeat;
+}
+
+/*主角部分*/
+#second-page #protagonist-page{
+    /*position: relative;*/
+    position: absolute;
+    height: 891px;
+    display: none;
+    left: 315px;
+    bottom: -891px;
+}
+#second-page #pro-title{
+    width: 538px;
+    height: 107px;
+    position: absolute;
+    top: 50px;
+    margin-left: 50%;
+    left: -269px;
+    background: url("images/title.png") no-repeat;
+}
+
+#second-page #pro-box{
+    width: 320px;
+    height: 56px;
+    position: absolute;
+    margin-left: 50%;
+    left: -160px;
+    top: 200px;
+}
+
+#second-page #pro-box a{
+    width: 152px;
+    height: 53px;
+    color: #a8813c;
+    text-align: center;
+    line-height: 56px;
+    font-size: 24px;
+
+
+}
+
+#second-page #pro-box #pro-protaprotagonist{
+    float: left;
+    background: url("images/zj_icon_ac_72c4a97.png") center center no-repeat;
+}
+#second-page #pro-box #pro-god{
+    background: url("images/zj_icon_b690ee2.png") center center no-repeat;
+    float: right;
+}
+#protagonist-page #pro-pictures{
+    height: 435px;
+    position: absolute;
+    bottom: 150px;
+    display: block;
+}
+
+#protagonist-page #pro-pictures a{
+    /*display: inline-block;*/
+    width: 283px;
+    height: 435px;
+    margin-left: 30px;
+    position: relative;
+    float: left;
+    background: url("images/card_bg_fc91a47.png") no-repeat;
+}
+#protagonist-page #pro-pictures img{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+#protagonist-page #pro-pictures p{
+
+    background: url("images/zj_intro_bg_1580f7e.jpg") no-repeat;
+}
+#protagonist-page #pro-pictures #name-anbeiqingming{
+    width: 29px;
+    height: 117px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    background: url("images/name_bg_d35ef8e.png") no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+#protagonist-page #pro-pictures em{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("images/index_z_d844bc8.png") -795px -174px;
+    position: absolute;
+    top: 120px;
+    left: 34px;
+}
+#pro-pictures #aneiqingming{
+    display: block;
+    width: 253px;
+    height: 150px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #35241c;
+    font-size: 14px;
+    position: absolute;
+    left: 5px;
+    bottom: -146px;
+    opacity: 0;
+}
+
+#pro-pictures #shenyue{
+    display: block;
+    width: 253px;
+    height: 70px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #35241c;
+    font-size: 14px;
+    position: absolute;
+    left: 5px;
+    bottom: -146px;
+    opacity: 0;
+}
+
+
+#protagonist-page #pro-pictures #name-shenyue{
+    width: 29px;
+    height: 102px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    background: url("images/name_bg_d35ef8e.png") no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+#pro-pictures #yuanboya{
+    display: block;
+    width: 253px;
+    height: 150px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #35241c;
+    font-size: 14px;
+    position: absolute;
+    left: 5px;
+    bottom: -146px;
+    opacity: 0;
+}
+
+#protagonist-page #pro-pictures #name-yuanboya{
+    width: 29px;
+    height: 107px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    background: url("images/name_bg_d35ef8e.png") no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    text-align: center;
+    padding-top: 45px;
+}
+#pro-pictures #babaibiqiuni{
+    display: block;
+    width: 253px;
+    height: 150px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #35241c;
+    font-size: 14px;
+    position: absolute;
+    left: 5px;
+    bottom: -146px;
+    opacity: 0;
+}
+
+#protagonist-page #pro-pictures #name-babaibiqiuni{
+    width: 29px;
+    height: 127px;
+    font-size: 15px;
+    line-height: 16px;
+    color: #000000;
+    background: url("images/name_bg_d35ef8e.png") no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+/*式神部分*/
+#god-pictures{
+
+    width: 1225px;
+    height: 442px;
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+    overflow: hidden;
+}
+
+#god-pictures .arrows{
+    text-align: center;
+    width: 10px;
+    position: absolute;
+    padding-top: 22px;;
+    top: 20px;
+    left: 30px;
+    background: url("images/index_z_d844bc8.png") -888px -124px no-repeat;
+
+}
+#god-pictures .arrows-title{
+    width: 14px;
+    color: #35241c;
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+    top: 45px;
+    left: 27px;
+}
+#god-pictures ol{
+    width: 3720px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#god-pictures ol li{
+    width: 279px;
+    height: 442px;
+    background: url("images/card_bg2_2330a9b.png") no-repeat;
+    margin:0 15px;
+    float: left;
+    position: relative;
+}
+
+#god-pictures li img{
+    position: absolute;
+    top: 9px;
+    left: 9px;
+}
+#god-pictures li p{
+    width: 100px;
+    position: absolute;
+    left: 90px;
+    bottom: 40px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+#god-pictures li .a-links{
+    position: absolute;
+    /*left: 30px;*/
+    bottom: 10px;
+
+}
+
+#god-pictures li .a-links a{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 81px;
+   margin-right: 5px;
+    color: #000;
+}
+#god-pictures li .a-links a span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    vertical-align: middle;
+    /*margin-right: 3px;*/
+}
+#god-pictures li .a-links a span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*margin-right: 3px;*/
+}
+
+
+
+
+
+
+.lis-btns{
+    width: 235px;
+    /*background-color: red;*/
+    height: 20px;
+    position: absolute;
+    bottom: 90px;
+    left: 580px;
+    display: none;
+}
+.lis-btns .left-arrow{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: -7px;
+    left: -30px;
+    background: url("images/index_z_d844bc8.png") -850px -150px;
+    cursor: pointer;
+}
+
+.lis-btns .right-arrow{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: -7px;
+    right: 58px;
+    background: url("images/index_z_d844bc8.png") -829px -150px;
+    cursor: pointer;
+}
+
+
+.left-arrow-dots{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: #6e6c6a;
+    /*list-style: disc;*/
+    float: left;
+    cursor: pointer;
+}
+
+
+/*舞台剧部分*/
+#second-page #theatre-page{
+    /*width: 1260px;*/
+    height: 538px;
+    /*background-color: red;*/
+    position: absolute;
+    left: 322px;
+    bottom: 153px;
+    display: none;
+}
+#theatre-page #left-picture{
+
+    height: 538px;
+}
+
+#theatre-page #right-picture{
+
+    height: 538px;
+}
+#theatre-page #left-picture a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 538px;
+    height: 538px;
+    background: url("images/wutaiju1_6d60e65.png") no-repeat;
+}
+
+#theatre-page #right-picture a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 538px;
+    height: 538px;
+    background: url("images/wutaiju2_98957a6.png") no-repeat;
+}
+
+#left-picture .circle{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 236px;
+    left: 234px;
+    background: url("images/index_z_d844bc8.png") -558px -606px;
+}
+
+#left-picture .circle .triangle{
+    display: block;
+    width: 12px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 22px;
+    background: url("images/index_z_d844bc8.png") -870px -150px;
+}
+
+#right-picture .circle{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 236px;
+    right: 234px;
+    background: url("images/index_z_d844bc8.png") -558px -606px;
+}
+
+#right-picture .circle .triangle{
+    display: block;
+    width: 12px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 22px;
+    background: url("images/index_z_d844bc8.png") -870px -150px;
+}
+
+
+.circle{
+
+    animation:circlescale 2s linear infinite;
+    cursor: pointer;
+}
+@keyframes circlescale {
+    0%{transform: scale(1)}
+    50%{transform: scale(1.3)}
+    100%{transform: scale(1)}
+
+}
+/*第二个页面结束*/

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <base target="_blank">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <style id="css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #stars_box {
+            height: 1050px;
+            margin-top: -10px;
+            overflow: hidden;
+            opacity: 0.8;
+        }
+      .Max {
+          width: 100%;
+          height: 1100px;
+          background:url("images/bg1_b5f279e.jpg") center center no-repeat;
+          position: relative;
+      }
+      #xyan img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+      }
+      #xyan div {
+          width: 320px;
+          height: 240px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 3;
+          cursor: move;
+      }
+        #return {
+            width: 177px;
+            height: 45px;
+            position: absolute;
+            top:140px;
+            left: 10px;
+            z-index: 3;
+            transition: 1s ease;
+            opacity:1;
+            z-index: 4;
+            /*transform:translate3d(0,0,0);*/
+            /*animation:play 1s linear infinite;*/
+            background: url("images/goweb2_070d44b.png");
+        }
+        /*@keyframes play {*/
+            /*0%{transform: scale(0.8)}*/
+            /*100%{transform: scale(1.1)}*/
+        /*}*/
+        #logo {
+            position: absolute;
+            top: 22px;
+            left: 30px;
+            z-index: 3;
+        }
+        #logo img {
+            transition: 0.5s ease;
+            float: left;
+            opacity:0.8;
+        }
+        #logo img:hover {
+            transform: scale(1.1);
+            opacity:1;
+        }
+      #logo img:nth-child(2) {
+          width: 86px;
+          height: 86px;
+          margin: 0 15px 0 10px;
+      }
+        #xunazhuan {
+            position: absolute;
+            top: 655px;
+            right: 80px;
+            border-radius: 50px;
+            transform:translate3d(0,0,0);
+            animation:rotating 10s linear infinite;
+        }
+        @keyframes rotating {
+        0%{transform: rotate(0deg)}
+        100%{transform: rotate(360deg)}
+        }
+        #xunazhuan {
+            width: 400px;
+            height: 400px;
+        }
+
+        /*旋转轴*/
+
+
+        #index-trans {
+            position: absolute;
+            top:0;
+            left: 140px!important;
+        }
+
+        li {
+            list-style: none;
+        }
+        li {
+            width: 950px;
+            height: 950px;
+            margin:0 auto;
+        }
+        .li-wraper {
+            width: 900px;
+            height: 900px;
+            margin:25px auto;
+            border-radius: 50%;
+            border: 2px solid rgba(244,225,150,1);
+            position: relative;
+            /*animation: indexXuanzhuanBox 10s linear infinite;*/
+        }
+        .li-wraper li {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            left:390px;
+            top: 390px;
+            /*background: url(images/200.png) no-repeat;*/
+        }
+        .li-wraper li:nth-child(1){
+            left: 390px;
+            top:10px;
+        }
+        .li-wraper li:nth-child(2){
+            left: 595px;
+            top:70px;
+        }
+        .li-wraper li:nth-child(3){
+            left: 725px;
+            top:210px;
+        }
+        .li-wraper li:nth-child(4){
+            left: 770px;
+            top:390px;
+        }
+        .li-wraper li:nth-child(5){
+            left: 720px;
+            top:578px;
+        }
+        .li-wraper li:nth-child(6){
+            left: 590px;
+            top:713px;
+        }
+        .li-wraper li:nth-child(7){
+            left: 390px;
+            top:770px;
+        }
+        .li-wraper li:nth-child(8){
+            left: 200px;
+            top:719px;
+        }
+        .li-wraper li:nth-child(9){
+            left: 60px;
+            top:578px;
+        }
+        .li-wraper li:nth-child(10){
+            left: 10px;
+            top:390px;
+        }
+        .li-wraper li:nth-child(11){
+            left: 60px;
+            top:201px;
+        }
+        .li-wraper li:nth-child(12){
+            left: 200px;
+            top:61px;
+        }
+        .shenmotuxuanzhuan {
+            width: 620px;
+            height: 620px;
+            position: absolute;
+            border: 1px solid #000;
+            border-radius: 50%;
+            top:158px;
+            left:164px;
+            background: url("images110/xuanzhuan.png") no-repeat;
+            background-size: cover;
+            opacity: 1;
+            animation: indexXuanzhuan 10s linear infinite;
+        }
+        @keyframes indexXuanzhuan {
+            0%{transform: rotate(0deg)}
+            100%{transform: rotate(360deg)}
+        }
+        @keyframes indexXuanzhuanBox {
+            0%{transform: rotate(0deg)}
+            100%{transform: rotate(-360deg)}
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*旋转轴*/
+
+
+        #return div{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 177px;
+            height: 45px;
+        }
+        #return div .line {
+            display: block;
+            position: absolute;
+            background: none;
+            transition: 0.6s ease-out;
+            -ms-transition: 0.6s ease-out;
+            -webkit-transition: 0.6s ease-out;
+            -o-transition: 0.6s ease-out;
+        }
+        #return div .line {
+            background: #E5CC56;
+        }
+        #return div .line-top {
+            height: 2px;
+            width: 0;
+            left: -110%;
+            top: -2px;
+        }
+        #return div:hover .line-top {
+            width: 100%;
+            left: -2px;
+        }
+        #return div .line-right {
+            width: 2px;
+            height: 0;
+            right:-2px;
+            top:-110%;
+        }
+        #return div:hover .line-right {
+            height: 100%;
+            top: -2px;
+        }
+        #return div .line-bottom{
+            width: 2px;
+            height: 0;
+            left:-2px;
+            bottom:-110%;
+        }
+        #return:hover div .line-bottom {
+            height: 100%;
+            bottom: -2px;
+        }
+        #return div .line-left {
+            width: 0;
+            height: 2px;
+            right:-110%;
+            bottom:-2px;
+        }
+        #return div:hover .line-left {
+            width: 100%;
+            right: -2px;
+        }
+        #new-zh {
+            position: absolute;
+            top: 100px;
+            right: 10px;
+            width: 340px;
+            height: 521px;
+            transform:translate3d(0,0,0);
+            animation:show 4s linear infinite;
+        }
+        @keyframes show {
+            0%{opacity: 0.3}
+            50%{opacity: 1}
+            100%{opacity: 0.3}
+        }
+        /*页脚*/
+         p {
+             margin:0;
+             padding:0;
+         }
+        a {
+            color: #ffffff;
+            text-decoration: none!important;
+        }
+
+        .footer {
+            width: 100%;
+            height: 120px;
+            background: #000;
+        }
+        .footer-con > a {
+            float:left;
+            width: 255px;
+            height: 88px;
+            line-height: 88px;
+            margin-left: 250px;
+            color: #fff;
+        }
+        .footer-logo-left {
+            float: left;
+            width: 118px;
+            height: 31px;
+            margin-top: 25px;
+            background: url("images/netease.2(2).png");
+        }
+        .footer-logo-right {
+            float: right;
+            width: 134px;
+            margin-top: 25px;
+            height: 31px;
+            background: url("images/nie.2.png");
+        }
+        .footer-con-nav {
+            margin-left: 540px;
+            margin-top: 12px;
+            height: 48px;
+        }
+        .footer-con-nav p {
+            font-size: 12px;
+            height: 24px;
+            margin: 0 auto;
+            padding-top: 10px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+        .footer-con-nav p a:hover {
+            color: crimson;
+        }
+        .footer-con-nav p .line {
+            display: inline-block;
+            width: 6px;
+            height: 1px;
+            vertical-align: middle;
+            margin:6px;
+            background-color: #E6E6E6;
+        }
+        .parent {
+            margin-left: 185px;
+            display: inline-block;
+            width: 155px;
+            line-height: 26px;
+            background-color: #610000;
+            padding:0 5px;
+        }
+        .footer-con-nav p a {
+
+            color:#ffffff;
+        }
+        .footer-con-nav a:hover {
+            text-decoration: underline;
+        }
+
+
+
+
+    </style>
+
+    <script>
+        //光效
+    window.onload = function (){
+        var stars_box=document.getElementById('stars_box');  //获取id为star_box的元素
+        var Obj=function(){}   //创建一个对象
+        Obj.prototype.drawStar=function(){     //增加对象原型方法drawStar
+            var odiv=document.createElement('div');   //创建div
+            odiv.style.width='7px';
+            odiv.style.height='7px';
+            odiv.style.position='absolute';   //设置div为相对定位
+            odiv.style.left=Math.floor(document.body.clientWidth*Math.random())+'px';   //div的left值不能超出屏幕的宽度
+            odiv.style.top=Math.floor(1000*Math.random())+'px';//div的left值不能超出屏幕的高度
+            odiv.style.overflow='hidden';  //设置div的overflow为hidden
+            stars_box.appendChild(odiv);   //添加div到stars_box元素上
+            var ostar=document.createElement('img');   //再创建img元素
+            ostar.style.width='49px';
+            ostar.style.height='7px';
+            ostar.src='star.png';
+            ostar.style.position='absolute';   //设置img为绝对定位
+            ostar.style.top='0px';
+            odiv.appendChild(ostar);   //把img添加到div中
+            Play(ostar);    //实现动画闪烁的方法Play();
+        }
+        function Play(ele){
+            var i=Math.floor(Math.random()*7);  //为了使星星不同时闪烁，设置随机值
+            var timer=setInterval(function(){     //每100ms执行一次匿名方法
+                if(i<7){
+                    ele.style.left=-i*7+'px';
+                    i++;
+                }else{
+                    i=0;
+                }
+            },100);
+        }
+//使用for循环创建30个不同的对象
+        for(var i=0;i<200;i++){
+            var obj=new Obj();
+            obj.drawStar();
+        }
+
+
+
+       //光效
+//        中间旋转
+        var one = document.getElementById("one");
+        var transWraper = document.getElementsByClassName("li-wraper")[0];
+        var transUl = transWraper.getElementsByTagName("ul")[0];
+        var srLis = document.getElementsByClassName("sr-trans");
+        var oCss = document.getElementById("css");
+        var shenmotuxuanzhuan = document.getElementsByClassName("shenmotuxuanzhuan")[0];
+        //获取圆心坐标
+        var x = parseFloat(getStyle(transWraper,"left")) + parseFloat(getStyle(transWraper,"width"))/2;
+        var y = parseFloat(getStyle(transWraper,"top")) + parseFloat(getStyle(transWraper,"height"))/2;
+
+        //给每个旋转盒子设置图片路径设置图片路径
+        for (var i = 0; i < srLis.length; i++){
+            srLis[i].index = i;
+            srLis[i].style.background = "url(images110/2"+(i<10?('0'+i):(i))+".png) no-repeat";
+        }
+        opaciy();
+        function opaciy(){
+            for (var n = 0; n < srLis.length ; n++){
+                swingAnimate(srLis[n],{"opacity":1});
+                srLis[n].onmouseenter = function () {
+                    for (var m = 0; m < srLis.length; m++){
+                        srLis[m].style.opacity = 0.5;
+                    }
+                    this.style.opacity = 1;
+                    shenmotuxuanzhuan.children.src = "images110/2"+(this.index<10?('0'+this.index):(i))+".png"
+                }
+            }
+            oCss.innerHTML += '.li-wraper {width: 900px;height: 900px;margin:25px auto;border-radius: 50%;border: 4px solid rgb(244,225,150);position: relative;animation: indexXuanzhuanBox 10s linear infinite;}'
+        }
+
+
+
+        function swingAnimate(ele,json,fn) {
+            clearInterval(ele.timer);
+            var bool = true;
+            ele.timer = setInterval(function () {
+                bool=true;
+                for (var k in json){
+                    if (k==="z-index"){
+                        ele.style.zIndex = json[k];
+                    }else if (k==="opacity"){
+                        if (getStyle(ele,k)=="undefined"){
+                            var leader = 100;
+                        }else {
+                            var leader = parseInt(getStyle(ele,k)*100) || 0;
+                        }
+                        var step = (json[k]*100 - leader)/10;
+                        step = step > 0?Math.ceil(step):Math.floor(step);
+                        leader += step;
+                        ele.style.opacity = leader/100;
+                        if (json[k] !== leader/100){
+                            bool = false;
+                        }
+                    }else {
+                        var leader = parseInt(getStyle(ele,k)) || 0;
+                        var step = (json[k] - leader)/10;
+                        step = step > 0?Math.ceil(step):Math.floor(step);
+                        leader+=step;
+                        ele.style[k] = leader + "px";
+                        if (json[k] !== leader){
+                            bool = false;
+                        }
+                    }
+                }
+                if (bool){
+                    clearInterval(ele.timer);
+                    if (fn){
+                        fn();
+                    }
+                }
+                console.log(111);
+            },20000)
+        }
+
+        function getStyle(ele,attr) {
+            if (getComputedStyle){
+                return getComputedStyle(ele,null)[attr];
+            }else {
+                return ele.currentStyle[attr];
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        中间旋转
+
+    </script>
+</head>
+<body>
+
+<div class="Max">
+    <audio src="梅林茂 - 開幕 百鬼綺譚.mp3" id="music"  autoplay></audio>
+    <div id="stars_box"></div>
+    <a href="02-index.html" id="return">
+        <div>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
+        </div>
+    </a>
+    <a href="#" id="logo">
+        <img src="images/logo_1550973.png" alt=""/>
+        <img src="images/192.png" alt=""/>
+    </a>
+<!--中间旋转轴-->
+    <ul id="index-trans">
+        <li id="one">
+            <div class="li-wraper">
+                <ul>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                    <li class="sr-trans"></li>
+                </ul>
+            </div>
+        </li>
+        <div class="shenmotuxuanzhuan"><img src="" alt=""></div>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--中间旋转轴-->
+
+    <a href="#" id="new-zh">
+        <img src="images/title_ca8be89.png" alt=""/>
+    </a>
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-con">
+            <a href="#"><span class="footer-logo-left"></span><span class="footer-logo-right"></span></a>
+            <div class="footer-con-nav">
+                <p>
+                    <a href="#">公司简介</a><span class="line"></span>
+                    <a href="#">客户服务</a><span class="line"></span>
+                    <a href="#">相关法律</a><span class="line"></span>
+                    <a href="#">网易游戏</a><span class="line"></span>
+                    <a href="#">联系我们</a><span class="line"></span>
+                    <a href="#">商务合作</a><span class="line"></span>
+                    <a href="#">加入我们</a><span class="line"></span>
+                    <a href="#">用户协议</a>
+                </p>
+                <p>
+                    网易公司版权所有 ©1997-2017<a class="parent" href="#">点击查看家长监护工程 ></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

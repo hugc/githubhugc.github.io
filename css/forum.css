@@ -1,0 +1,921 @@
+ /*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;  /*清除元素的内外边距*/
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;  /*外面环绕线*/
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+/*去掉原样式中的小黑点*/
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "miscrosoft yahei";  /*字体的自动识别*/
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+/*输入字居中显示*/
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/**/
+textarea {
+    resize: none;  /*不可以随意拖动*/
+}
+
+/*防止拖动*/
+img {
+    border: 0;
+    vertical-align: middle; /*  去掉图片底部默认的3像素空白缝隙*/
+}
+
+table {
+    border-collapse: collapse; /*合并外连线*/
+}
+
+body {
+    font: 12px/150% "microsoft yahei", Arial, Verdana, "\5b8b\4f53"; /*unitedCode的写法，宋体的写法*/
+    color: #333; /*150%基于当前字体尺寸的百分比行间距*/
+    background: #fff;
+}
+
+.clearfix:before, .clearfix:after {
+    /*清除浮动，最好最标准的写法*/
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/  /*兼容IE6下的写法*/
+}
+
+a {
+    color: #222222;   /*a 标签是不继承颜色 的*/
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {  /*一般是起装饰作用*/
+    font-style: normal;  /*去掉原有的样式*/
+    text-decoration: none;  /*去掉下划线或是删除线*/
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+.pr{
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
+/*css初始化完成*/
+
+/*图标字体开始*/
+ @font-face {
+     font-family: 'iconfont';
+     src: url('../font/iconfont.eot');
+     src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+     url('../font/iconfont.woff') format('woff'),
+     url('../font/iconfont.ttf') format('truetype'),
+     url('../font/iconfont.svg#iconfont') format('svg');
+ }
+ .iconfont{
+     font-family:"iconfont" !important;
+     font-size:16px;font-style:normal;
+     -webkit-font-smoothing: antialiased;
+     -webkit-text-stroke-width: 0.2px;
+     -moz-osx-font-smoothing: grayscale;
+ }
+/*图标字体结束*/
+ /*大背景开始*/
+ body {
+     position: relative;
+     background:url("../images/back1.png") center 45px no-repeat;
+     /*background-size: cover;*/
+ }
+
+/*遮罩开始*/
+ #forumMask {
+     width: 100%;
+     height: 100%;
+     background-color: #000;
+     opacity: 0.6;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     display: block;
+     z-index: 998;
+ }
+ /*遮罩结束*/
+/*弹出框开始*/
+ #forumPop {
+     width: 600px;
+     height: 375px;
+     position: fixed;
+     left: 50%;
+     margin-left: -350px;
+     top: 50%;
+     margin-top: -177px;
+     z-index: 999;
+ }
+
+ #forumClose {
+     display: block;
+     width: 32px;
+     height: 32px;
+     position: absolute;
+     top: 8px;
+     right: 8px;
+     cursor: pointer;
+     z-index: 999;
+ }
+ #forumCloseImg {
+     width: 600px;
+     height: 375px;
+     display: block;
+     position: absolute;
+ }
+/*弹出框结束*/
+ /*走下角图片*/
+ .forum-tool {
+     width: 100%;
+     height: 0;
+     position: fixed;
+     bottom: 0;
+     left: -100%;
+     z-index: 888;
+ }
+ .forum-tool .forum-none {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 166px;
+     background-color: #000000;
+     opacity: 0.6;
+ }
+ .forum-tool .forum-loadtwo {
+     width: 1062px;
+     height: 264px;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     margin-left: -531px
+ }
+ .forum-tool #forumSmallX {
+     width: 23px;
+     height: 23px;
+     font-weight: 700;
+     position: absolute;
+     bottom: 135px;
+     left: 50%;
+     margin-left: 520px;
+     cursor: pointer;
+ }
+ #forumMore {
+     width: 127px;
+     height: 155px;
+     position: fixed;
+     left: 0;
+     bottom: 100px;
+     z-index: 888;
+     cursor: pointer;
+ }
+ /*top开始*/
+ .forum-top {
+     width: 100%;
+     height: 45px;
+     border-bottom: none;
+     background-color: #333;
+ }
+ .forum-top-left {
+     float: left;
+     display: block;
+     line-height: 28px;
+ }
+ .forum-top a {
+     float: left;
+     height: 45px;
+     line-height: 45px;
+     padding: 0 4px;
+     margin-right: 12px;
+     color: #b2b2b2;
+ }
+ .forum-top-left a:hover {
+     color: #00FFFF;
+ }
+ /*右边小手机和搜索框*/
+ .forum-top-right {
+     float: right;
+     width: 315px;
+     height: 45px;
+     display: block;
+     line-height: 28px;
+ }
+ .forum-top-right a {
+     height: 45px;
+     line-height: 45px;
+     color: #b2b2b2;
+     float: left;
+     z-index: 2;
+     padding: 0 4px;
+     margin-right: 12px;
+     position: relative;
+ }
+ .forum-top-right #forumiIcPhone {
+     display: inline-block;
+     width: 22px;
+     height: 30px;
+     line-height: 30px;
+     font-size: 30px;
+     margin-right: 3px;
+     vertical-align: middle;
+ }
+ .forum-top-right img {
+     display: none;
+     position: absolute;
+     z-index: 1;
+     width: 140px;
+     height: 140px;
+     top: 20px;
+     left: 50%;
+     margin-left: -70px;
+     opacity: 0;
+     cursor: pointer;
+ }
+ .forum-top-right .forum-search {
+     position: relative;
+     margin-top: 6px;
+     margin-right: 4px;
+ }
+ .forum-top-right .forum-search input {
+     padding: 5px 10px;
+     border: none;
+     border-radius: 100px;
+     height: 18px;
+     line-height: 18px;
+     width: 200px;
+     background: #bbb;
+ }
+ .forum-top-right .forum-search span {
+     display: inline-block;
+     position: absolute;
+     top: 0px;
+     right: 14px;
+     width: 22px;
+     height: 30px;
+     font-size: 22px;
+     color: #000;
+     font-weight: bold;
+     vertical-align: middle;
+     margin-right: 3px;
+     cursor: pointer;
+ }
+ /*登录区域*/
+ .forum-loginArea {
+     height: 150px;
+     margin-bottom: 40px;
+     position: relative;
+ }
+ .forum-loginArea .forum-loginText{
+     width: 183px;
+     height: 56px;
+     border-radius: 5px;
+     padding: 10px;
+     position: absolute;
+     top: 50%;
+     margin-top: -38px;
+     right: 0;
+     background-color: #fff;
+     opacity: 0.7;
+     color: #FF0000;
+ }
+ .forum-loginText .forum-login {
+     width: 78px;
+     height: 56px;
+     padding: 0 10px 0 10px;
+     border-right: 1px solid #AFC3D0;
+ }
+ .forum-loginText .forum-loginone {
+     display: block;
+     width: 75px;
+     height: 23px;
+     line-height: 23px;
+     font-weight: 700;
+     position: absolute;
+     top: 50%;
+     margin-top: -12px;
+     border-radius: 3px;
+     text-align: center;
+     color: #fff;
+     background-color: #FF0000;
+ }
+ /*找回密码和注册*/
+ .forum-loginText .forum-pass {
+     display: block;
+     width: 64px;
+     height: 28px;
+     font-size: 12px;
+     padding: 0 10px;
+     position: absolute;
+     top: 14px;
+     right: 5px;
+     color: #FF0000;
+ }
+ .forum-loginText .forum-reg {
+     display: block;
+     width: 64px;
+     height: 28px;
+     padding: 0 10px;
+     position: absolute;
+     right:5px;
+     bottom: 8px;
+     font-size: 12px;
+     font-weight: 700;
+     color: #cf0211;
+ }
+ .forum-pass:hover,.forum-reg:hover {
+     text-decoration: underline;
+ }
+ /*导航栏开始*/
+ /*导航栏左边*/
+ .forum-nav {
+     height: 44px;
+     background-color: #2a1b17;
+     opacity: 0.8;
+     border-radius: 10px 10px 0 0;
+ }
+ .forum-nav li {
+     float: left;
+     height: 44px;
+     margin-right: 1px;
+     font-size: 18px;
+ }
+ .forum-nav li a {
+     display: block;
+     height: 44px;
+     line-height: 44px;
+     padding: 0 23px;
+     color: #fff;
+ }
+ .forum-nav li a:hover {
+     background-color: #d90d12;
+     border-radius: 5px 5px 0 0;
+ }
+ .forum-nav .forum-third {
+     position: relative;
+ }
+ .forum-nav li img {
+     position: absolute;
+     top:20px;
+     left: 77px;
+ }
+ /*导航栏右边*/
+ .forum-nav .forum-nav-right {
+     height: 44px;
+     margin-right: 20px;
+     float: right;
+ }
+ .forum-nav-right .forum-sign {
+     display: inline-block;
+     width: 58px;
+     height: 28px;
+     line-height: 28px;
+     font-size: 14px;
+     text-align: center;
+     color:#fff;
+     background-color: #d90d12;
+     margin-top: 6px;
+     border-radius: 5px;
+    margin-left: 15px;
+ }
+ .forum-nav-right .forum-fast-nav {
+     display: inline-block;
+     width: 110px;
+     height: 28px;
+     line-height: 28px;
+     text-align: center;
+     font-weight: 700;
+     margin-top: 5px;
+     border-radius: 3px;
+     color: #1F0427;
+     background-color: #fff;
+     position: relative;
+ }
+ .forum-nav-right .forum-fast-nav .forum-xiaosan {
+     position: absolute;
+     top: 12px;
+     right: 21px;
+ }
+ /*中心部分*/
+ .forum-main {
+     width: 1180px;
+     height: 266px;
+     padding: 15px 10px;
+     background-color: #FFFFFF;
+     background: url("../images/back4.jpg") no-repeat;
+     background-size: cover;
+     
+ }
+ /*左侧轮播图*/
+ .forum-main .forum-lunbo {
+     width: 400px;
+     height: 260px;
+     overflow: hidden;
+     position: relative;
+ }
+ .forum-main .forum-lunbo ul {
+     position: absolute;
+     top: 0;
+     display: block;
+     width: 2400px;
+     height: 250px;
+ }
+ .forum-main .forum-lunbo li {
+     float: left;
+     position: relative;
+ }
+ .forum-main .forum-lunbo img {
+     display: block;
+     width: 400px;
+     height: 250px;
+ }
+  .forum-lunbo .forum-option {
+     display: block;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 40px;
+     line-height: 40px;
+     padding-left: 10px;
+     font-size: 16px;
+     color: #fff;
+     background-color: #000;
+     opacity: 0.7;
+ }
+ .forum-main ol {
+     width: 100%;
+     margin-top: 2px;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+ }
+ .forum-main ol li {
+    background-color: #333;
+    float: left;
+    height: 8px;
+    margin-right: 2px;
+    width: 19.6%;
+}
+ .forum-main ol li:last-child {
+     margin-right: 0;
+ }
+/*中间部分*/
+ .forum-main {
+     position: relative;
+ }
+ .forum-news {
+     position: absolute;
+     width: 435px;
+     height: 260px;
+     top: 15px;
+     left: 620px;
+ }
+ .forum-hottitle {
+     width: 435px;
+     height: 20px;
+     line-height: 20px;
+     font-size: 16px;
+     font-weight: 700;
+     padding-bottom: 10px;
+     text-align: center;
+     color: #D91A29;
+     border-bottom: 1px solid #EEEEEE;
+ }
+ .forum-hottitle a {
+     color: #D91A29;
+ }
+ /*新闻部分*/
+ .forum-news .forum-newone {
+     width: 435px;
+     height: 105px;
+     padding: 6px 0;
+     border-bottom: 1px solid #EEEEEE;
+ }
+.forum-newone ul {
+    float: left;
+    margin-right: 15px;
+    width: 280px;
+    color:#222222;
+    font-size: 14px;
+    overflow: hidden;
+}
+ .forum-newone ul li{
+     float: left;
+     display: block;
+     width: 100%;
+     height: 21px;
+     line-height: 21px;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
+ }
+ .forum-news ul a:hover {
+     text-decoration: underline;
+     color: #D91A29;
+ }
+ .forum-news span {
+     color: #D91A29;
+ }
+.forum-newone .forum-figure {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+}
+ .forum-figure a {
+     color: #fff;
+ }
+.forum-figure .forum-decript {
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #000;
+    opacity: 0.7;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    text-align: center;
+}
+ .forum-figure .forum-decript a {
+     line-height: 20px;
+ }
+ .forum-figure .forum-decript a:hover {
+     text-decoration: underline;
+ }
+ .forum-newtwo {
+     border-bottom: 0;
+ }
+ .forum-news #forumNewtwo {
+     border-bottom: none;
+ }
+ /*中间右边部分*/
+ .forum-main-right {
+     width: 325px;
+     height: 253px;
+     position: absolute;
+     top: 15px;
+     right: 10px;
+ }
+ .forum-main-right .forum-download {
+     width: 320px;
+     float: left;
+     height: 140px;
+ }
+ .forum-main-right .forum-download .forum-code {
+     float: left;
+     padding: 6px 0 0 18px;
+ }
+ .forum-main-right .forum-code img {
+     width: 115px;
+     width: 115px;
+ }
+ .forum-main-right .forum-load {
+    padding-top: 3px;
+     text-align: center;
+ }
+ .forum-main-right a {
+     display: inline-block;
+     margin: 6px 0 0;
+ }
+ .forum-main-right .forum-load img {
+     width: 170px;
+     height: 50px;
+ }
+ .forum-main-right img {
+     transition: all 0.4s ease;
+ }
+ .forum-main-right img:hover {
+     transform:scale(1.1);
+ }
+ /*快速通道*/
+ .forum-main-right .forum-fast {
+     width: 320px;
+     height: 16px;
+     float: left;
+ }
+ .forum-main-right .forum-fast span {
+     display: block;
+     float: left;
+     width: 4px;
+     height: 16px;
+     background-color: #D91A29;
+     margin-right: 5px;
+ }
+ .forum-main-right .forum-fast b {
+     width: 60px;
+     font-size: 14px;
+     font-weight: 700;
+     color: #000;
+ }
+ .forum-main-right .forum-fast s {
+     float: right;
+     color: #000;
+ }
+.forum-link {
+    float: left;
+    width: 325px;
+    height: 82px;
+    margin-top: 15px;
+    text-align: center;
+}
+.forum-link a {
+    float: left;
+    width: 25%;
+    height: 82px;
+}
+.forum-link a:hover {
+    color: #D91A29;
+}
+ .forum-link a img{
+     transition: 0.5s ease;
+ }
+.forum-link a img:hover {
+    transform: rotate(35deg);
+}
+.forum-link a span {
+    display: inline-block;
+}
+/*中部视频区域开始*/
+.forum-banner {
+    width: 1600px;!important;
+    height: 654px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.forum-banner .forum-help {
+    width: 1570px;
+    height: 120px;
+    padding: 0 15px;
+    margin-bottom: 25px;
+}
+ .forum-banner .forum-help h5 {
+     font-size: 16px;
+     color: #DA1B2A;
+     font-weight: bold;
+     border-bottom: 1px solid #E8E9F3;
+     line-height: 30px;
+     margin-bottom: 15px;
+ }
+ .forum-help .forum-helpway {
+     height: 74px;
+     margin-right: -10px;
+ }
+ .forum-help .forum-helpway ul li {
+    float: left;
+     width: 295px;
+     height: 70px;
+     margin-right: 16px;
+     border-radius: 5px;
+     background: #F8F8F8;
+     border: 2px solid #E8E9F3;
+     overflow: hidden;
+ }
+ .forum-help .forum-helpway li:hover {
+     border-color: #D91A29;
+ }
+ .forum-help .forum-helpway img {
+     float: left;
+     margin: 11px;
+     padding-right: 11px;
+     text-align: center;
+     border-right: 1px solid #D6D7E2;
+ }
+ .forum-help .forum-helpway .forum-text {
+     float: left;
+     border-left: 1px solid #F4F5F7;
+     overflow: hidden;
+     text-align: center;
+     padding-top: 10px;
+ }
+ .forum-helpway .forum-text p {
+     font-size: 16px;
+     color: #DA1B2A;
+     line-height: 32px;
+     width: 120px;
+     text-align: center;
+ }
+ /*视频*/
+ .forum-banner .forum-vedioAear {
+     width: 1600px;
+     height: 510px;
+     background:url("../images/back3.jpg")  no-repeat;
+     background-size: cover;
+     background-opacity: 0.1;
+     filter: alpha(opacity=1);
+     /*background-color: #1B0E20;*/
+     /*/!*opacity: 1;*!/*/
+ }
+ /*招募图*/
+ .forum-recruit {
+     width: 1200px;
+     /*height: 103px;*/
+     margin-bottom: 18px;
+ }
+/*返回主页*/
+ .forum-home {
+     width: 1180px;
+     height: 29px;
+     padding: 5px 10px 0;
+     background: #FFF;
+ }
+ .forum-home .forum-return {
+     /*width: 212px;*/
+     height: 29px;
+     line-height: 29px;
+     float: left;
+ }
+ .forum-return .forum-homeImg {
+     width: 16px;
+     height: 29px;
+     float: left;
+ }
+ .forum-return .forum-next {
+     width: 20px;
+     height: 29px;
+     float: left;
+ }
+ .forum-return .forum-address {
+    display: block;
+    width: 120px;
+    height: 29px;
+    color: #333;
+    float: left;
+}
+/*讨论区域*/
+ .forum-discuss {
+     width: 1180px;
+     height: 506px;
+     background-color: #F7F7F7;
+     padding: 10px;
+ }
+ /*头部网址*/
+ .forum-discuss .forum-short {
+    width: 1578px;
+    height: 41px;
+    border: 1px solid #e2de9b;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+ .forum-discuss .forum-short .forum-inner {
+     width: 1558px;
+     height: 31px;
+     padding: 5px 0 10px 10px;
+     line-height: 31px;
+ }
+ .forum-short .forum-inner .forum-yy {
+     float: left;
+     width: 42px;
+     height: 31px;
+     line-height: 31px;
+     font-size: 14px;
+     font-weight: 700;
+     margin-right: 16px;
+ }
+ .forum-short .forum-inner a:hover {
+     text-decoration: underline;
+ }
+ .forum-short .forum-inner span {
+     display: block;
+     float: right;
+     width: 106px;
+     height: 31px;
+     line-height: 31px;
+ }
+ .forum-short .forum-inner span b {
+     color: #F26C4F;
+ }
+ /*讨论模块*/
+.forum-discuss .forum-invit {
+    width: 1580px;
+    height: 448px;
+}
+ .forum-discuss .forum-invit li {
+     display: inline-block;
+     width: 33%;
+     height: 110px;
+ }
+ .forum-discuss .forum-invit li img {
+     float: left;
+ }
+ .forum-invit .forum-massage {
+     float: left;
+     width: 263px;
+     height: 93px;
+     margin: 8px 0 0 10px;
+ }
+ .forum-discuss .forum-invit img {
+     cursor: pointer;
+ }
+ .forum-massage p {
+    width: 263px;
+    height: 24px;
+    font-size: 16px;
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
+ .forum-massage p a {
+     font-size: 16px;
+     font-weight: 700;
+     color: #d91a29;
+ }
+ .forum-massage p a:hover {
+     text-decoration: underline;
+ }
+ .forum-massage p span {
+     font-size: 12px;
+ }
+ .forum-massage p span s {
+     color: #d91a29;
+ }
+ .forum-massage .forum-description {
+     width: 263px;
+     height: 42px;
+     font-size: 14px;
+     color: #434A54;
+     overflow: hidden;
+ }
+ .forum-massage .forum-statis {
+     width: 263px;
+     height: 18px;
+     color: #999;
+     margin-bottom: 6px;
+ }
+ .forum-massage .forum-description .forum-sub {
+     font-size: 14px;
+     font-weight: 700;
+     color: #FF0000;
+ }
+ .forum-massage #forumSpecial {
+     color: #0033AD;
+ }
+ .forum-discuss .forum-invit li img {
+     transition: all 0.4s ease;
+ }
+ .forum-discuss .forum-invit li img:hover {
+     transform:scale(1.1);
+
+ }

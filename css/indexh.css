@@ -1,0 +1,608 @@
+
+
+/*<攻略部分开始*/
+.strategy-section {
+    width: 1200px;
+    height: 430px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+.search-of-strategy {
+    width: 372px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: -58px;
+    border: 2px solid #000;
+}
+.search-of-strategy input {
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 16px;
+}
+.search-of-strategy .search-btn {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    width: 58px;
+    height: 58px;
+    background: url("../images/index-sprite.png") no-repeat -1400px -563px;
+    cursor: pointer;
+}
+.search-of-strategy .search-btn:hover {
+    background-position: -1400px -505px;
+}
+
+
+.left-banner-part {
+    width: 368px;
+    height: 430px;
+    position: relative;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.left-banner-part .strategy-banner {
+    width: 368px;
+    height: 262px;
+    positioin: relative;
+}
+
+
+.strategy-banner-top {
+    width: 736px;
+    height: 228px;
+    position: absolute;
+}
+
+.strategy-banner-top a {
+    width: 368px;
+    height: 228px;
+    background: url("../images/gl_banner_dbcbd77.jpg");
+    float: left;
+}
+.strategy-banner-top a:nth-child(2) {
+    background: url("../images/ng_banner_830d3e8.jpg");
+}
+
+
+.strategy-banner-bottom {
+    width: 214px;
+    height: 16px;
+    margin: 10px 0;
+    padding-left: 154px;
+    position: absolute;
+    left: 0px;
+    top: 232px;
+}
+
+.strategy-banner-bottom span {
+    display : block;
+    width: 8px;
+    height: 8px;
+    border: 4px solid #000;
+    border-radius: 100%;
+    margin-left: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.strategy-banner-bottom span:first-child {
+    background-color: #000;
+}
+
+.left-banner-part .strategy-nav {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.strategy-nav-tit {
+    display: block;
+    width: 60px;
+    height: 150px;
+    padding-left: 32px;
+    position: relative;
+    left: 27px;
+    bottom: 0;
+    float:left;
+}
+
+.strategy-nav-tit span {
+    display: block;
+    width: 24px;
+    height: 134px;
+    position: absolute;
+    left: 8px;
+    bottom: 16px;
+    background-image: url("../images/index-sprite.png");
+    float: left;
+}
+
+.strategy-nav-skill1 {
+    background-position: -1344px -315px;
+}
+.strategy-nav-skill2 {
+    background-position: -1307px -466px;
+}
+.strategy-nav-skill3 {
+    background-position: -1320px -315px;
+}
+.strategy-nav-skill4 {
+    background-position: -1368px -315px;
+}
+
+.strategy-nav-line {
+    display: block;
+    width: 11px;
+    height: 150px;
+    background: url("../images/index-sprite.png") no-repeat -1295px -316px;
+    margin-left: 25px;
+    float: left;
+}
+
+.right-strategy-part {
+    width: 790px;
+    height: 430px;
+    position: relative;
+    z-index: 25;
+    margin-left: 35px;
+}
+
+.right-strategy-part-tab {
+    width: 774px;
+    height: 98px;
+    border-bottom: 1px solid #cbcdcc;
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+}
+
+.right-strategy-part-tab .tab-item.tab-name {
+    display: block;
+    width: 134px;
+    height: 85px;
+    background: url("../images/index-sprite.png") no-repeat -1035px -1297px;
+    float: left;
+}
+
+.right-strategy-part-tab .tab-item {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 91px;
+    margin: 5px 8px 0;
+    float: left;
+}
+
+/*筋斗云的样式-start*/
+.right-strategy-part-tab .tab-item em{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 96px;
+    height: 91px;
+    display: none;
+    z-index: -1;
+    background: url("../images/index-sprite.png") no-repeat -939px -1297px;
+}
+/*筋斗云的样式-end*/
+
+.right-strategy-part-tab .tab-item span {
+    display: block;
+    width: 70px;
+    height: 40px;
+    background: url("../images/index-sprite.png") no-repeat;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.tab-item.freshmen span {
+    background-position: -1400px -755px;
+}
+.tab-item.god span {
+    background-position: -1401px -997px;
+    height: 32px;
+    margin-top: 28px;
+}
+.tab-item.competition span {
+    background-position: -1400px -794px;
+    height: 37px;
+    width: 75px;
+    margin-top: 23px;
+}
+.tab-item.playWay span {
+    background-position: -1238px -992px;
+    width: 83px;
+    height: 32px;
+    margin-top: 28px;
+}
+
+
+.right-strategy-part-tab .sperate-dot {
+    display: block;
+    width: 40px;
+    height: 10px;
+    margin-top: 45px;
+    background-color: blue;
+    background: url("../images/index-sprite.png") no-repeat -340px -615px;
+    float: left;
+}
+
+.right-strategy-part-content {
+    width: 835px;
+    height: 291px;
+    position: relative;
+    overflow: hidden;
+}
+
+.right-strategy-part-content .strategy-list {
+    width: 4175px;
+    height: 291px;
+    position: absolute;
+    /*position: relative;*/
+    left: 0;
+    top: 0;
+}
+
+.right-strategy-part-content .strategy-list ul {
+    width: 835px;
+    height: 291px;
+    float: left;
+}
+
+.right-strategy-part-content .strategy-list ul li {
+    width: 345px;
+    height: 48px;
+    float: left;
+    margin-right: 56px;
+    padding-top: 10px;
+    padding-left: 15px;
+    border-bottom: 1px dotted #333;
+}
+
+.strategy-list ul li {
+    font-size: 14px;
+    color: #333;
+}
+
+.strategy-list ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.strategy-list ul li em {
+    line-height: 25px;
+    color: #b2afaf;
+}
+
+/*<攻略部分结束*/
+
+
+/*同人专区部分开始*/
+.tonren-section {
+    width: 1220px;
+    height: 545px;
+    margin: 80px auto;
+}
+
+.tonren-section-topTab {
+    width: 1200px;
+    height: 77px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.tonren-section-topTab .tonren-title {
+    display: block;
+    width: 112px;
+    height: 106px;
+    float: left;
+    margin-right: 24px;
+    margin-top: -15px;
+    background: url("../images/index-sprite.png") no-repeat -928px -666px;
+}
+
+.tonren-section-topTab .tonren-tabs {
+    width: 1062px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.tonren-tabs li {
+    width: 155px;
+    height: 75px;
+    float: left;
+    position: relative;
+    top: 0;
+    left:0;
+    border-bottom: 2px solid #000;
+}
+
+.tonren-tabs .tabs-lastOne {
+    width: 130px;
+    height: 75px;
+}
+.tonren-tabs .tabs-lastOne .to-touGao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 0;
+    width: 120px;
+    height: 25px;
+    margin: 25px 5px;
+    background-image: url("../images/index-sprite.png");
+    background-position: -930px -607px;
+}
+
+
+.tonren-tabs li a {
+    display: block;
+    width: 155px;
+    height: 58px;
+    border-left: 1px dotted #000;
+}
+
+.tonren-tabs li a span {
+    width: 100%;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 18px;
+    float: left;
+}
+
+.tonren-tabs li a span i {
+    display: block;
+    width: 74px;
+    height: 18px;
+    margin: 0 auto;
+    background: url("../images/index-sprite.png") no-repeat -1400px -1264px;
+}
+.tonren-tabs li .tabs-list1 span{
+    top: 0;
+}
+.tonren-tabs li .tabs-list2 span i {
+    background-position: -1398px -1300px;
+}
+.tonren-tabs li .tabs-list3 span i {
+    background-position: -1398px -1282px;
+}
+.tonren-tabs li .tabs-list4 span i {
+    background-position: -1398px -1246px;
+}
+.tonren-tabs li .tabs-list5 span i {
+    background-position: -1398px -1228px;
+}
+.tonren-tabs li .tabs-list6 span i {
+    background-position: -1252px -1149px;
+    width: 90px;
+}
+
+
+.tonren-tabs li a em {
+    width: 100%;
+    height: 54px;
+    float: left;
+    position: absolute;
+    left: 0;
+    bottom: -54px;
+    margin-top: 6px;
+    background: url("../images/icons_8a667d7.png") no-repeat 0 0;
+}
+.tonren-tabs li .tabs-list1 em {
+    bottom: -3px;
+}
+.tonren-tabs li .tabs-list2 em {
+    background-position: -167px 0;
+}
+.tonren-tabs li .tabs-list3 em {
+    background-position: -317px 0;
+}
+.tonren-tabs li .tabs-list4 em {
+    background-position: -474px 0;
+}
+.tonren-tabs li .tabs-list5 em {
+    background-position: -627px 0;
+}
+.tonren-tabs li .tabs-list6 em {
+    background-position: -924px 0;
+}
+
+
+
+
+.tonren-section-bottomList {
+    width: 1220px;
+    height: 423px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.bottomList-pics {
+    width: 7320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottomList-pics .pics-items {
+    width: 1220px;
+    height: 415px;
+    float: left;
+}
+.pics-items li {
+    float: left;
+    width: 285px;
+    height: 200px;
+    margin: 0 10px 10px;
+}
+
+.pics-items li a {
+    display: block;
+    width: 100%;
+    height: 163px;
+    position: relative;
+}
+
+.pics-items li a img {
+    width: 100%;
+    height: 100%;
+}
+.pics-items li a .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+}
+.pics-items li a .cover em {
+    display: block;
+    width: 80px;
+    position: absolute;
+    height: 96px;
+    margin: 34px 102px;
+    background: url("../images/index-sprite.png") no-repeat -679px -472px;
+}
+
+.pics-items li p {
+    line-height: 42px;
+    color: #666;
+    height: 42px;
+    font-size: 14px;
+}
+.pics-items li p span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+
+/*同人专区部分结束*/
+
+
+/*视频和壁纸部分开始*/
+.videoAndPaper-section  {
+    margin-top: -42px;
+    width: 100%;
+    height: 514px;
+    background: url("../images/video_bg_e5f0d15.jpg") no-repeat 0 0;
+}
+
+.videoAndPaper-wrap {
+    width: 1200px;
+    height: 456px;
+    padding-top: 58px;
+    margin: 0 auto;
+}
+
+.video-part {
+    width: 580px;
+    height: 456px;
+    float: left;
+}
+
+.video-part h3 {
+    width: 227px;
+    height: 148px;
+    float: left;
+    margin-right: 62px;
+    background: url("../images/index-sprite.png") no-repeat -1079px -466px;
+}
+.video-part h3 a {
+    display: block;
+    width: 100%;
+    height : 100%;
+}
+
+.video-part .item {
+    display: block;
+    width: 270px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+.video-part .item img {
+    width: 100%;
+    height: 154px;
+    transition: 0.5s ease;
+}
+.video-part .item img:hover {
+    transform: scale(1.1);
+}
+.video-part .item p {
+    height: 45px;
+    width: 100%;
+    text-indent: 12px;
+    font-size: 14px;
+    line-height: 45px;
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+.wallPaper-part {
+    width: 580px;
+    height: 456px;
+    float: right;
+}
+
+.wallPaper-part h3 {
+    width: 227px;
+    height: 148px;
+    float: left;
+    margin-right: 62px;
+    background: url("../images/index-sprite.png") no-repeat -1101px -614px;
+}
+.wallPaper-part h3 a {
+    display: block;
+    width: 100%;
+    height : 100%;
+}
+
+.wallPaper-part .item {
+    display: block;
+    width: 270px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+.wallPaper-part .item img {
+    width: 100%;
+    height: 154px;
+    transition : 0.5s ease;
+}
+.wallPaper-part .item img:hover {
+    transform: scale(1.1);
+}
+
+.wallPaper-part .item p {
+    height: 45px;
+    width: 100%;
+    text-indent: 15px;
+    font-size: 14px;
+    line-height: 45px;
+    color: #000;
+}
+
+
+/*视频和壁纸部分结束*/

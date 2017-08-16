@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>晴明_《阴阳师》主角录_《阴阳师》手游官网_网易和风匠心巨制，开启唯美奇幻之旅</title>
+    <link rel="stylesheet" href="css/主角录.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <style>
+        .footer {
+            position: relative;
+            width: 1920px;
+            height: 353px;
+            /*background: #000;*/
+            background: url("images/bg_footer_fc1f919.png");
+            z-index: -1;
+        }
+        #NIE-topBar {
+            /*position: absolute;*/
+            height: 54px;
+            top: 0px;
+            left: 22%;
+            z-index: 999;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #NIE-topBar a:hover{
+            color: #bc2e2e;
+        }
+        #NIE-topBar-main {
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        #NIE-topBar-logo {
+            width: 133px;
+            height: 44px;
+            display: block;
+            margin-top: 5px;
+            float: left;
+            background: url("images/logo_b5525b7.png") no-repeat;
+        }
+        #NIE-topBar-news {
+            position: absolute;
+            left: 138px;
+            top: 0;
+            padding-left: 18px;
+            width: 420px;
+            height: 54px;
+        }
+        #NIE-topBar-news a {
+            width: 960px;
+            display: block;
+            position: absolute;
+            left: -132px;
+            z-index: 23;
+            top: 55px;
+            height: 250px;
+            display: none;
+            background: url("images/594775d9a7f252bfcb1b9d08d8JdmKdb.jpg");
+        }
+        #NIE-topBar-mid {
+            width: 150px;
+            height: 52px;
+            position: absolute;
+            top: 0;
+            left: 563px;
+            padding-left: 50px;
+            line-height: 52px;
+            text-align: center;
+        }
+        #NIE-topBar-mid a {
+            display:inline-block;
+            padding: 0 12px;
+            transition: 0.2s ease;
+        }
+        #NIE-topBar-mid a:hover{
+            color: #bc2e2e;
+            border-bottom: 3px solid #bc2e2e;
+            background-color: #f3f3f3;
+        }
+        #NIE-topBar-right  {
+            width: 100px;
+            height: 55px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align:center ;
+            line-height: 52px;
+            transition: 0.2s ease;
+            font-size: 12px;
+            overflow: hidden;
+        }
+        #NIE-topBar-right-v {
+            position: relative;
+            top: 0;
+        }
+        #NIE-topBar-right a:hover{
+            color: #bc2e2e;
+            border-bottom: 3px solid #bc2e2e;
+            background-color: #f3f3f3;
+        }
+        #NIE-topBar-right a{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            transition: 0.2s ease;
+        }
+        #NIE-topBar-menus {
+            width: 1000px;
+            height: 37px;
+        }
+        #NIE-topBar-menu {
+            width: 120px;
+            height: 37px;
+            padding-top: 15px;
+            padding-left: 15px;
+            position: absolute;
+            right:100px;
+            top: 0;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        #NIE-table {
+            position: absolute;
+            top: 55px;
+            background-color: #fdfefe;
+            border-top: 1px solid #ececec;
+            width: 1000px;
+            z-index: 23;
+            border-collapse: collapse;
+            line-height: 23px;
+            display: none;
+        }
+        .NIE-nav {
+            width: 100%;
+            position: relative;
+        }
+        #NIE-table ul {
+            font-size: 12px;
+            float: left;
+        }
+        #NIE-table b {
+            line-height: 39px;
+            color: #bc2e2e;
+            display: block;
+            width: 100%;
+            height: 39px;
+            font-size: 14px;
+            text-indent: 20px;
+            background-color: #f7f7f8;
+        }
+        #NIE-table p {
+            margin-left: 6px;
+            line-height: 24px ;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #2f2f2f;
+        }
+        #NIE-table a {
+            width: 120px;
+            margin-left: 3px;
+            display: inline-block;
+            font-weight: 400;
+            overflow: hidden;
+            color: #626262;
+        }
+        #NIE-table a:hover {
+            color: #bc2e2e;
+        }
+        .NIE-nav li {
+            width: 247px;
+            float: left;
+            border-right: 1px solid #eee;
+            overflow: hidden;
+        }
+        .NIE-list {
+            float: left;
+            height: 450px;
+            width: 100%;
+        }
+        .NIE-list li {
+            border-right: 1px solid #eee;
+            height: 415px;
+            float: left;
+            padding: 10px 0 0 14px;
+            overflow: hidden;
+        }
+        #NIE-table a em {
+            font-weight: 400;
+            display: block;
+            line-height: 24px;
+        }
+        .NIE-topBar-1st {
+            background: url("images/sprite-w_7fc7459.png") right -267px no-repeat;
+        }
+        .NIE-topBar-hot {
+            background: url("images/sprite-w_7fc7459.png") right -144px no-repeat;
+        }
+        .NIE-topBar-new {
+            background: url("images/sprite-w_7fc7459.png") right -206px no-repeat;
+        }
+        .NIE-list .NIE-topBar-more {
+            width: 20px!important;
+            height: 95px;
+            display: block;
+            position: absolute;
+            right: 149px;
+            top: 245px;
+            color: #fff!important;
+            font-size: 12px;
+            line-height: 14px;
+            background-color: #bc2e2e;
+            padding-left: 10px;
+            padding-top: 7px;
+            border-top-left-radius:2px ;
+            border-bottom-left-radius:2px ;
+        }
+        .NIE-list .NIE-topBar-more:hover {
+            opacity: 0.9;
+        }
+
+        #NIE-topBar-menu:hover{
+            color: #bc2e2e;
+            border-bottom: 3px solid #bc2e2e;
+            background-color: #f3f3f3;
+        }
+        #NIE-topBar-ms {
+            display: inline-block;
+            width: 120px;
+            height: 25px;
+            color: #bc2e2e;
+            position: absolute;
+        }
+        #NIE-topBar-mg {
+            position: absolute;
+            right: 18px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="NIE-topBar" class="NIE-topBar">
+    <div id="NIE-topBar-main">
+        <a href="#" id="NIE-topBar-logo"></a>
+
+        <div id="NIE-topBar-news">
+            <span>
+                <img src="images/594775d996dee4c817ece6bdxtf5Ycig.jpg" alt=""/>
+                <a href="#"></a>
+            </span>
+        </div>
+        <div id="NIE-topBar-mid">
+            <a href="#" id="global-mid">注册账号</a>
+            <a href="#" id="global-reg">安卓充值</a>
+        </div>
+        <div id="NIE-topBar-right">
+            <div id="NIE-topBar-right-v">
+                <a href="#">安卓充值9.8折</a>
+                <a href="#">领取网易精选宝箱</a>
+                <a href="#">畅玩网易</a>
+            </div>
+        </div>
+        <div id="NIE-topBar-menus">
+            <div id="NIE-topBar-menu">
+                <span id="NIE-topBar-ms">
+                    网易游戏全目录
+                    <span class="iconfont" id="NIE-topBar-mg">&#xe60a;</span>
+                </span>
+            </div>
+            <div class="NIE-table" id="NIE-table">
+                <ul class="NIE-nav">
+                    <li style="width:247px;"><b><font><font>客户端游戏</font></font></b></li>
+                    <li class="mobi" style="width: 603px;"><b><font><font>手机游戏</font></font></b></li>
+                    <li style="width:147px;float:right;" class="last_th"><b><font><font>游戏辅助</font></font></b></li>
+                </ul>
+
+                <ul class="NIE-list">
+                    <li style="width:233px;">
+                        <p><font><font>角色扮演</font></font></p>
+                        <a href="#" target="_blank"><em
+                                class="NIE-topBar-1st"><font><font>梦幻西游电脑版</font></font></em></a>
+                        <a href="#" target="_blank"><em class="NIE-topBar-hot"><font><font>天下3 </font></font></em></a>
+                        <a href="#" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>大话2经典版</font></font></em></a>
+                        <a href="#" target="_blank"><em
+                                class="NIE-topBar-new"><font><font>天谕</font></font></em></a>
+                        <a href="#" target="_blank"><font><font>大话2免费版</font></font></a>
+                        <a href="#" target="_blank"><em
+                                class="NIE-topBar-new"><font><font>西楚霸王</font></font></em></a>
+                        <a href="#" target="_blank"><font><font>新大话3经典版</font></font></a>
+                        <a href="#" target="_blank"><em class="NIE-topBar-new"><font><font>新倩女幽魂</font></font></em></a>
+                        <a href="#" target="_blank"><font><font>新大话3免费版</font></font></a>
+                        <a href="#" target="_blank"><em class="NIE-topBar-new"><font><font>泰亚史诗</font></font></em></a>
+                        <a href="#" target="_blank"><font><font>镇魔曲</font></font></a>
+                        <a href="#" target="_blank"><font><font>大唐无双零</font></font></a>
+                        <a href="#" target="_blank"><font><font>龙魂时刻</font></font></a>
+                        <a href="#" target="_blank"><font><font>武魂2 </font></font></a>
+                        <a href="#" target="_blank"><font><font>精灵传说</font></font></a>
+                        <a href="#" target="_blank"><font><font>斩魂</font></font></a>
+                        <a href="#" target="_blank"><font><font>新飞飞</font></font></a>
+                        <a href="#" target="_blank"><font><font>魔兽世界</font></font></a>
+                        <a href="http://www.diablo3.com.cn/?from=nietop"
+                           target="_blank"><font><font>暗黑破坏神3</font></font></a>
+
+                        <p style="margin-top:2px;"><font><font>竞技/休闲</font></font></p>
+                        <a href="http://ow.blizzard.cn/home?from=nietop" target="_blank"><em
+                                class="NIE-topBar-new"><font><font>守望先锋</font></font></em></a>
+                        <a href="http://tuji.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-new"><font><font>突击英雄</font></font></em></a>
+                        <a href="http://db.163.com/?from=nietop" target="_blank"><em class="NIE-topBar-new"><font><font>夺宝联盟</font></font></em></a>
+                        <a href="http://wf.163.com/?from=nietop" target="_blank"><em class="NIE-topBar-new"><font><font>无尽战区</font></font></em></a>
+                        <a href="http://z.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-new"><font><font>战意</font></font></em></a>
+                        <a href="http://mjdj.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-new"><font><font>秘境对决</font></font></em></a>
+                        <a href="http://www.heroesofthestorm.com.cn/landing/?from=nietop"
+                           target="_blank"><font><font>风暴英雄</font></font></a>
+                        <a href="http://sc2.163.com/home?from=nietop"
+                           target="_blank"><font><font>星际争霸Ⅱ </font></font></a>
+                        <a href="http://y3.163.com?from=nietop" target="_blank"><font><font>英雄三国</font></font></a>
+                        <a href="http://www.hearthstone.com.cn/?from=nietop"
+                           target="_blank"><font><font>炉石传说</font></font></a>
+                    </li>
+                    <li class="hot" style="width:143px;">
+                        <p><font><font>热门推荐</font></font></p>
+                        <a href="http://my.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>梦幻西游手游</font></font></em></a>
+                        <a href="http://dhxy.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>大话西游手游</font></font></em></a>
+                        <a href="http://qnm.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>倩女幽魂手游</font></font></em></a>
+                        <a href="http://yys.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>阴阳师</font></font></em></a>
+                        <a href="http://stzb.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>率土之滨</font></font></em></a>
+                        <a href="http://raven.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>Raven：掠夺者</font></font></em></a>
+                        <a href="http://dt.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>大唐无双手游</font></font></em></a>
+                        <a href="http://ldxy.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>乱斗西游2 </font></font></em></a>
+                        <a href="http://mhws.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>梦幻西游无双2</font></font></em></a>
+                        <a href="http://kf.163.com/?from=nietop" target="_blank"><font><font>功夫熊猫3手游</font></font></a>
+                        <a href="http://sm.163.com/?from=nietop" target="_blank"><font><font>西游神魔决</font></font></a>
+                        <a href="http://cb.163.com/?from=nietop" target="_blank"><font><font>时空之刃</font></font></a>
+                        <a href="http://mxxc.163.com/?from=nietop" target="_blank"><font><font>梦想星城</font></font></a>
+                        <a href="http://ma.163.com/?from=nietop" target="_blank"><font><font>乖离性百万亚瑟王</font></font></a>
+                        <a href="http://sq.163.com/?from=nietop" target="_blank"><font><font>有杀气童话</font></font></a>
+
+                    </li>
+                    <li class="news" style="width: 431px;">
+                        <p><font><font>新品推荐</font></font></p>
+
+                        <div id="NIE-list-news">
+                            <div class="long-news">
+                                <a href="http://tx.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>天下手游</font></font></em></a>
+                                <a href="http://mc.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>我的世界Minecraft </font></font></em></a>
+                                <a href="http://t2.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>终结者2官方手游</font></font></em></a>
+                                <a href="http://mblr.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>秘宝猎人</font></font></em></a>
+                                <a href="http://dhrx.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>大话西游热血版</font></font></em></a>
+                                <a href="http://wotb.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>坦克世界闪击战</font></font></em></a>
+                                <a href="http://tqlm.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>天启联盟</font></font></em></a>
+                                <a href="http://ma3.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>叛逆性百万亚瑟王</font></font></em></a>
+                                <a href="http://ms.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>元气战姬学院</font></font></em></a>
+                                <a href="http://moe.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>萌王EX </font></font></em></a>
+                                <a href="http://dot.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>泰坦黎明</font></font></em></a>
+                                <a href="http://miku.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>初音速</font></font></em></a>
+                                <a href="http://zgz.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>战国志</font></font></em></a>
+                                <a href="http://xsd.163.com/?from=nietop"
+                                   target="_blank"><font><font>小时代官方游戏</font></font></a>
+                                <a href="http://gfxm.163.com/?from=nietop"
+                                   target="_blank"><font><font>功夫熊猫官方手游</font></font></a>
+                                <a href="http://tnj.163.com/?from=nietop"
+                                   target="_blank"><font><font>猫和老鼠官方手游</font></font></a>
+
+                            </div>
+                            <div class="short-news">
+                                <a href="http://zm.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>镇魔曲手游</font></font></em></a>
+                                <a href="http://mjdj.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>秘境对决</font></font></em></a>
+                                <a href="http://bilibili.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>魔法禁书目录</font></font></em></a>
+                                <a href="http://sg.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>三国如龙传</font></font></em></a>
+                                <a href="http://mwsj.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>迷雾世界</font></font></em></a>
+                                <a href="http://land.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>光明大陆</font></font></em></a>
+                                <a href="http://jjwz.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>荆棘王座</font></font></em></a>
+                                <a href="http://zztj.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>重装突击</font></font></em></a>
+                                <a href="http://tank.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>坦克连</font></font></em></a>
+                                <a href="http://tj.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>天骄铁骑</font></font></em></a>
+                                <a href="http://fz.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>汉王纷争</font></font></em></a>
+                                <a href="http://id5.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>第五人格</font></font></em></a>
+                                <a href="http://fc.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>永远的7日之都</font></font></em></a>
+                                <a href="http://clx.163.com/?from=nietop" target="_blank"><em
+                                        class="NIE-topBar-new"><font><font>楚留香</font></font></em></a>
+                                <a href="http://hzhy.163.com/?from=nietop"
+                                   target="_blank"><font><font>魂之幻影</font></font></a>
+                                <a href="http://ywl.163.com/?from=nietop"
+                                   target="_blank"><font><font>妖刀少女异闻录</font></font></a>
+
+                            </div>
+                            <div class="mini-news">
+                                <a href="http://dhh.163.com/?from=nietop"
+                                   target="_blank"><font><font>大航海之路</font></font></a>
+                                <a href="http://ssydj.163.com/?from=nietop"
+                                   target="_blank"><font><font>三少爷的剑</font></font></a>
+                                <a href="http://hit.163.com/?from=nietop"
+                                   target="_blank"><font><font>我守护的一切</font></font></a>
+                                <a href="http://dance.163.com/?from=nietop"
+                                   target="_blank"><font><font>劲舞团</font></font></a>
+                                <a href="http://ry.163.com/?from=nietop" target="_blank"><font><font>永恒文明</font></font></a>
+
+
+                                <a href="http://xf.163.com/?from=nietop" target="_blank"><font><font>曙光先锋</font></font></a>
+                                <a href="http://dtyxj.163.com/?from=nietop"
+                                   target="_blank"><font><font>大唐游仙记</font></font></a>
+                                <a href="http://dfw9.163.com/?from=nietop"
+                                   target="_blank"><font><font>大富翁9 </font></font></a>
+                                <a href="http://jx.163.com/?from=nietop"
+                                   target="_blank"><font><font>无尽战区·觉醒</font></font></a>
+                                <a href="http://wxzz.163.com/?from=nietop"
+                                   target="_blank"><font><font>无限战争</font></font></a>
+                                <a href="http://glory.163.com/?from=nietop"
+                                   target="_blank"><font><font>格罗亚传奇</font></font></a>
+
+                                <a href="http://dao.163.com/?from=nietop"
+                                   target="_blank"><font><font>飞刀又见飞刀</font></font></a>
+                                <a href="http://hyy.163.com/?from=nietop" target="_blank"><font><font>花语月</font></font></a>
+                                <a href="http://jm.163.com/?from=nietop"
+                                   target="_blank"><font><font>惊梦</font></font></a>
+                            </div>
+                            <div class="mini-news">
+                                <a href="http://ha.163.com/?from=nietop" target="_blank"><font><font>黑暗启元</font></font></a>
+                                <a href="http://fmz.163.com/?from=nietop" target="_blank"><font><font>伏魔咒</font></font></a>
+                                <a href="http://txhd.163.com/?from=nietop"
+                                   target="_blank"><font><font>天下HD </font></font></a>
+                                <a href="http://txx.163.com/?from=nietop"
+                                   target="_blank"><font><font>天下X天下</font></font></a>
+                                <a href="http://zj.163.com/?from=nietop" target="_blank"><font><font>异次元战姬</font></font></a>
+                                <a href="http://yhbj.163.com/?from=nietop"
+                                   target="_blank"><font><font>永恒边境</font></font></a>
+                                <a href="http://dos.163.com/?from=nietop" target="_blank"><font><font>钢铁黎明</font></font></a>
+                                <a href="http://wjsy.163.com/?from=nietop"
+                                   target="_blank"><font><font>无尽神域</font></font></a>
+                                <a href="http://yongshi.163.com/?from=nietop"
+                                   target="_blank"><font><font>勇士x勇士</font></font></a>
+                                <a href="http://zh.163.com/boot.html?from=nietop"
+                                   target="_blank"><font><font>斩魂手游版</font></font></a>
+                                <a href="http://xjzdy.163.com/?from=nietop"
+                                   target="_blank"><font><font>星际总动员</font></font></a>
+                                <a href="http://mtj.163.com/?from=nietop" target="_blank"><font><font>魔天记</font></font></a>
+                                <a href="http://yzr.163.com/?from=nietop"
+                                   target="_blank"><font><font>雨血：影之刃</font></font></a>
+                                <a href="http://tth.163.com/?from=nietop" target="_blank"><font><font>弹弹猴</font></font></a>
+                                <a href="http://sl.163.com/?from=nietop" target="_blank"><font><font>圣灵觉醒</font></font></a>
+                                <a href="http://hunter.163.com/?from=nietop"
+                                   target="_blank"><font><font>狩猎纪元</font></font></a>
+
+
+                            </div>
+                            <div class="mini-news">
+                                <a href="http://god.163.com/?from=nietop" target="_blank"><font><font>命运起源</font></font></a>
+                                <a href="http://cake.163.com/index.html?from=nietop"
+                                   target="_blank"><font><font>蛋糕物语</font></font></a>
+                                <a href="http://acg.163.com/?from=nietop" target="_blank"><font><font>皇牌机娘</font></font></a>
+                                <a href="http://rz.163.com/?from=nietop"
+                                   target="_blank"><font><font>忍者必须死2 </font></font></a>
+                                <a href="http://th.163.com/?from=nietop" target="_blank"><font><font>童话大冒险</font></font></a>
+                                <a href="http://bz.163.com/?from=nietop" target="_blank"><font><font>暴走骑士团</font></font></a>
+                                <a href="http://yhl.163.com/?from=nietop"
+                                   target="_blank"><font><font>倩女幽魂录</font></font></a>
+
+                                <a href="http://smj.163.com/?from=nietop" target="_blank"><font><font>神魔劫</font></font></a>
+                                <a href="http://mmx.163.com/?from=nietop"
+                                   target="_blank"><font><font>火拼萌萌消</font></font></a>
+                                <a href="http://dwlm.163.com/?from=nietop"
+                                   target="_blank"><font><font>超能动物联盟</font></font></a>
+                                <a href="http://jianglin.163.com/?from=nietop"
+                                   target="_blank"><font><font>将临天下</font></font></a>
+
+                                <a href="http://jdsj.163.com/?from=nietop"
+                                   target="_blank"><font><font>绝代双骄</font></font></a>
+                                <a href="http://fd.163.com/?from=nietop" target="_blank"><font><font>小李飞刀</font></font></a>
+                                <a href="http://wcym.163.com/?from=nietop"
+                                   target="_blank"><font><font>我朝有马</font></font></a>
+                                <a href="http://zlj.163.com/?from=nietop"
+                                   target="_blank"><font><font>口袋侏罗纪</font></font></a>
+                                <a href="http://wxhd.163.com/?from=nietop"
+                                   target="_blank"><font><font>无限幻斗</font></font></a>
+                            </div>
+                            <div class="mini-news">
+
+
+                                <a href="http://xym.163.com/?from=nietop" target="_blank"><font><font>迷你西游</font></font></a>
+                                <a href="http://lzxxdn.163.com/?from=nietop"
+                                   target="_blank"><font><font>来自星星的你</font></font></a>
+                                <a href="http://zgmh.163.com/?from=nietop"
+                                   target="_blank"><font><font>主公莫慌</font></font></a>
+                                <a href="http://slg.163.com/?from=nietop" target="_blank"><font><font>烽火王师</font></font></a>
+                                <a href="http://wscs.163.com/?from=nietop"
+                                   target="_blank"><font><font>实况俱乐部</font></font></a>
+
+
+                            </div>
+                        </div>
+
+                        <a href="javascript:void(0)" hidefocus="true" class="NIE-topBar-more"
+                           id="NIE-topBar-more"><font><font>更多热门手游</font></font></a>
+                    </li>
+                    <li style="width:134px;border-right:0;float:right;">
+
+                        <a href="http://ypw.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>游品位</font></font></em></a>
+                        <a href="http://mumu.163.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-hot"><font><font>网易MuMu</font></font></em></a>
+                        <a href="http://gift.163.com/?from=nietop" target="_blank"><font><font>网易游戏印象</font></font></a>
+
+                        <a href="http://pt.163.com/?from=nietop" target="_blank"><font><font>网易游戏平台</font></font></a>
+                        <a href="http://app.netease.com/?from=nietop" target="_blank"><em
+                                class="NIE-topBar-new"><font><font>游戏论坛app</font></font></em></a>
+                        <a href="http://mkey.163.com?from=nietop" target="_blank"><font><font>手机将军令</font></font></a>
+                        <a href="http://ekey.163.com?from=nietop" target="_blank"><font><font>将军令</font></font></a>
+                        <a href="http://zhidao.163.com?from=nietop" target="_blank"><font><font>游戏知道</font></font></a>
+                        <a href="http://cbg.163.com?from=nietop" target="_blank"><font><font>藏宝阁</font></font></a>
+                        <a href="http://cc.163.com?from=nietop" target="_blank"><font><font>网易CC </font></font></a>
+                        <a href="http://gm.163.com?from=nietop" target="_blank"><font><font>客服中心</font></font></a>
+                        <a href="http://box.gm.163.com/?fromnietop" target="_blank"><font><font>自助百宝箱</font></font></a>
+                        <a href="http://uu.163.com?from=nietop" target="_blank"><font><font>网易UU加速器</font></font></a>
+                        <a class="NIE-topBar-btn" href="http://game.163.com/?from=nietop"
+                           target="_blank"><font><font>网易游戏</font></font></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--导航栏-->
+<div id="liTopBar">
+    <div class="left-bar">
+        <img src="images/257Z_r2_c2.png" alt=""/>
+
+    </div>
+    <div class="right-bar">
+        <a href="">官网首页</a>
+        <span>/</span>
+        <a href="">新闻资讯</a>
+        <span>/</span>
+        <a href="">游戏攻略</a>
+        <span>/</span>
+        <a href="">游戏特色</a>
+        <span>/</span>
+        <a href="">同人专区</a>
+        <span>/</span>
+        <a href="">官方渠道</a>
+    </div>
+</div>
+    <div class="main">
+        <!-- 左边主角录开始-->
+        <div class="main-title">
+            <a class="title" href="javescript:void(0)">主角录</a>
+            <div class="side-bar">
+                <a class="side-bar1" href="javescript:void(0);"></a>
+                <a class="side-bar2" href="javescript:void(0);"></a>
+                <a class="side-bar3" href="javescript:void(0);"></a>
+                <a class="side-bar4" href="javescript:void(0);"></a>
+                <div class="side-bar-dowload">
+                    <span>扫描下载</span>
+                    <img src="images/qr.png" width="72px" height="72px" alt=""/>
+                </div>
+            </div>
+
+   </div>
+        <!-- 左边主角录结束-->
+
+        <!-- 晴名部分开始-->
+        <div class="main-content">
+            <div class="qingMing">
+                <span>晴明</span>
+                <div class="video">
+                    <video autoplay width="128px" height="82px" src="images/p1.mp4"></video>
+                    <div class="video-border"></div>
+                </div>
+
+            </div>
+            <div class="intro">
+                <div class="intro-txt">
+                    <p>京都城中极具盛名的天才阴阳师</p>
+                    <p>却不知为何失去了自己的记忆</p>
+                    <p>等待着他的是寻回记忆的喜悦</p>
+                    <p>还是不堪回首的残忍真相</p>
+                </div>
+                <a href="javascript:void(0);">
+                    CV：杉山纪彰
+                    <i class="intro-icon">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </i>
+                    <i class="btn-line"></i>
+                </a>
+                <div class="intro-border">
+                    <i class="border-top"></i>
+                    <i class="border-right"></i>
+                    <i class="border-bottom"></i>
+                    <i class="border-left"></i>
+                </div>
+                <div class="intro-title">
+                    <span class="intro-title-head">01.</span>
+                    <span class="intro-title-foot">简 介</span>
+                    <span class="intro-title-bottom"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 晴名部分结束-->
+        <!--<div class="bg">-->
+            <!--<img src="images/bg1_a18d4e8.jpg" alt=""/>-->
+        <!--</div>-->
+
+        <!--右边人物图像-->
+        <div class="longBgc">
+            <!--<img src="images/soul1_0b5e746.png" alt=""/>-->
+        </div>
+        <div class="renBgc">
+            <!--<img src="images/role1_c0ceb09.png" alt=""/>-->
+        </div>
+    </div>
+<!------------------------右边人物图像结束------------->
+
+    <!-------------02技能区域开始--------------------------->
+<div class="section2">
+    <div class="section-content">
+        <div class="wrap">
+            <div class="section-title">
+                <span class="section-title-head">0.2</span>
+                <span class="section-title-foot">技能</span>
+                <i class="section-title-line"></i>
+            </div>
+            <div class="skill-slide">
+                <div class="skill-btn">
+                    <a class="btnCurrent" href="javascript:;">
+                        <img src="images/1003_65f8d81.png" alt=""/>
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/1009_8f3d33f.png" alt=""/>
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/1011_ce1d0ad.png" alt=""/>
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/1007_af896d0.png" alt=""/>
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/1005_aed420f.png" alt=""/>
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/1004_a6f84e0.png" alt=""/>
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/9001_cb51051.png" alt=""/>
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/1008_08e1bbc.png" alt=""/>
+                    </a>
+                </div>
+                <div class="temWrap">
+                    <div class="skill-wrap" id="skill-wrap">
+                        <div class="skill-cont">
+                            <span class="skill-name">基础术式</span>
+                            <p class="skill-desc">使用符咒攻击目标，造成攻击100%的伤害。</p>
+                            <p class="skill-lv">LV2 有50%（+效果命中：0%）的概率为目标附加[符咒·乱]效果，使其造成的伤害减少20%，持续2回合</p>
+                            <p class="skill-lv">LV3 [符咒·乱]效果的附加概率增至100%（+效果命中：0%）</p>
+                            <p class="skill-lv">LV4 [符咒·乱]效果强化：造成的伤害降低40%</p>
+                            <p class="skill-lv">LV5 技能伤害额外+20%</p>
+
+                        </div>
+                        <div class="skill-cont">
+                            <span class="skill-name">言灵·缚</span>
+                            <p class="skill-desc">以结界束缚目标，使目标受到的伤害增加10%，并有50%（+效果命中）的概率束缚敌人，被束缚的单位可以通过使用普通攻击打破束缚解除控制。结界继承阴阳师5%的生命值，技能冷却2回合。</p>
+                            <p class="skill-lv">LV2 [言灵·缚]效果强化：受到的伤害增加20%</p>
+                            <p class="skill-lv">LV3 [言灵·缚]效果强化：受到的伤害增加30%</p>
+                            <p class="skill-lv">LV4 [言灵·缚]效果强化：受到的伤害增加40%</p>
+                            <p class="skill-lv">LV5 结界继承的生命值增至阴阳师的10%</p>
+                        </div>
+                        <div class="skill-cont">
+                            <span class="skill-name">言灵·守</span>
+                            <p class="skill-desc">以灵力结成一个巨大的防守结界，使敌人无法伤害队友，结界在阴阳师行动2次或承受阴阳师生命上限10%的伤害后失效，技能冷却3回合。</p>
+                            <p class="skill-lv">LV2 吸收量增至阴阳师生命上限的11%</p>
+                            <p class="skill-lv">LV2 吸收量增至阴阳师生命上限的12%</p>
+                            <p class="skill-lv">LV2 吸收量增至阴阳师生命上限的13%</p>
+                            <p class="skill-lv">LV5 LV2 吸收量增至阴阳师生命上限的14%</p>
+
+                        </div>
+                        <div class="skill-cont">
+                            <span class="skill-name">言灵·一式</span>
+                            <p class="skill-desc">引爆战场内所有符咒并清除其效果，每个队友身上的符咒会为其恢复自身生命的10%，每个敌军身上的符咒会对其造成晴明攻击10%的伤害。</p>
+                            <p class="skill-lv">该技能无法升级</p>
+
+                        </div>
+                        <div class="skill-cont">
+                            <span class="skill-name">符咒·灭</span>
+                            <p class="skill-desc">为敌方全体贴上[符咒·灭]，使目标受到的伤害增加15%，效果在目标行动2次后消失。</p>
+                            <p class="skill-lv">LV2 [符咒·灭]效果强化：使目标受到的伤害增加20%</p>
+                            <p class="skill-lv">LV3 [符咒·灭]效果强化：使目标受到的伤害增加25%</p>
+                            <p class="skill-lv">LV4 [符咒·灭]效果强化：使目标受到的伤害增加30%</p>
+                            <p class="skill-lv">LV5 [符咒·灭]持续回合数+1</p>
+
+                        </div>
+                        <div class="skill-cont">
+                            <span class="skill-name">符咒·生</span>
+                            <p class="skill-desc">为其他队友贴上[符咒·生]，使其受到的伤害降低15%，持续2回合。</p>
+                            <p class="skill-lv">LV2 [符咒·生]持续回合数+1</p>
+                            <p class="skill-lv">LV3 [符咒·生]效果强化：受到的伤害降低20%</p>
+                            <p class="skill-lv">LV4 [符咒·生]效果强化：受到的伤害降低30%</p>
+                            <p class="skill-lv">LV5 [符咒·生]的效果同时作用于阴阳师</p>
+                        </div>
+                        <div class="skill-cont">
+                            <span class="skill-name">雷帝召来</span>
+                            <p class="skill-desc">晴明受到攻击时有10%（+效果命中）的概率召唤神龙，神龙以灵力召来天雷攻击敌方全体，造成晴明攻击100%的伤害。</p>
+                            <p class="skill-lv">LV2 有10%（+效果命中：0%）的概率晕眩敌人1回合</p>
+                            <p class="skill-lv">LV3 技能伤害额外+10%</p>
+                            <p class="skill-lv">LV4 眩晕概率增至20%（+效果命中：0%）</p>
+                            <p class="skill-lv">LV5 技能伤害额外+10%</p>
+                        </div>
+                        <div class="skill-cont">
+                            <span class="skill-name">言灵·星</span>
+                            <p class="skill-desc">以灵力划出五芒星结界，提升全体队友15%的伤害，持续2回合。</p>
+                            <p class="skill-lv">LV2 [言灵·星]效果强化：造成的伤害增加20%</p>
+                            <p class="skill-lv">LV3 [言灵·星]效果强化：造成的伤害增加25%</p>
+                            <p class="skill-lv">LV4 [言灵·星]效果强化：造成的伤害增加30%</p>
+                            <p class="skill-lv">LV5 [言灵·星]持续回合数+1</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------技能区结束------------------>
+
+<!-------------------3玩家攻略开始-------------------------------->
+    <div class="section3" data-section="玩家攻略">
+        <div class="section-content">
+            <div class="wrap">
+                <div class="section-title">
+                    <span class="section-title-head">0 3 .</span>
+                    <span class="section-title-foot">玩 家 攻 略</span>
+                    <i class="section-title-line left"></i>
+                </div>
+                <div class="strategy-grid" id="strategy-grid">
+                    <a class="strategy-btn first" href="javascript:;" >
+                        <img src="images/1_d39c0fe.jpg" alt="">
+                        <p class="strategy-name">【技能选择】晴明攻略：技能选择和阵容搭配</p>
+                    </a>
+                    <a class="strategy-btn" href="javascript:;" >
+                        <img src="images/2_2a02797.jpg" alt="">
+                        <p class="strategy-name">【阵容搭配】最强阵容搭配推荐</p>
+                    </a>
+                    <a class="strategy-btn" href="javascript:;" target="_blank">
+                        <img src="images/3_92fab55.jpg" alt=" ">
+                        <p class="strategy-name">【技能详解】安倍晴明详细介绍 阵容搭配技巧</p>
+                    </a>
+                    <a class="strategy-btn" href="javascript:;" target="_blank">
+                        <img src="images/4_825357e.jpg" alt="">
+                        <p class="strategy-name">【技能选择】技能选择推荐</p>
+                    </a>
+                    <a class="strategy-btn" href="javascript:;" target="_blank">
+                        <img src="images/5_7728457.jpg" alt="">
+                        <p class="strategy-name">【技能详解】晴明的培养与应用</p>
+                    </a>
+                    <a class="strategy-btn" href="javascript:;" target="_blank">
+                        <img src="images/6_69baf2a.jpg" alt="">
+                        <p class="strategy-name">【技能选择】萌新小攻略</p>
+                    </a>
+                    <a class="strategy-btn" href="javascript:;" target="_blank">
+                        <img src="images/7_b255f17.jpg" alt="">
+                        <p class="strategy-name">【技能选择】阴阳术进阶攻略</p>
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <a class="btn" href="javascript:void(0);" target="_blank">
+                        <span class="line line-top"></span>
+                        <span class="line line-right"></span>
+                        <span class="line line-bottom"></span>
+                        <span class="line line-left"></span>
+                        我 要 投 稿
+                        <i class="btn-line"><i></i></i>
+                        <i class="btn-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------3玩家攻略结束-------------------------------->
+
+<!------------------------------------5微博互动----------------------------->
+    <div class="section5" data-section="玩家互动">
+        <div class="section-content">
+            <div class="wrap">
+                <div class="section-title">
+                    <span class="section-title-head">0 5 .</span>
+                    <span class="section-title-foot">玩 家 互 动</span>
+                    <i class="section-title-line left"></i>
+                </div>
+                <div class="comments">
+                    <div class="comments-content">
+                        <textarea name="" id="commentTxt" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="comments-btn">
+                        <div class="btnBoder">
+                            <span id="faB">发布</span>
+                        </div>
+                    </div>
+
+                    <div id="commentsShow">
+                        <div class="comments-txt">
+                        <span class="comments-txt-title">
+                            m1***@163.com
+                        </span>
+                        <span class="txt-content">
+                            求大佬解答，晴明的言灵星和廉鼬的加成冲突吗？为什么我廉鼬和晴明不管谁后手放了加成都会刷新
+                            <a class="answer" href="">(23) 回复</a>
+                        </span>
+                        </div>
+                        <div class="comments-txt">
+                            <span class="comments-txt-title">
+                                su***@163.com
+                            </span>
+                            <span class="txt-content">
+                               妖刀赛高~
+                                <a class="answer" href="">(3) 回复</a>
+                            </span>
+                        </div>
+                        <div class="comments-txt">
+                        <span class="comments-txt-title">
+                            ho***@163.com
+                        </span>
+                        <span class="txt-content">
+                           Amazing。
+                            <a class="answer" href="">(2) 回复</a>
+                        </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------微博互动结束---------------------->
+    <div class="footer">
+        <a class="footer-con" href=""></a>
+        <a class="footer-con1" href=""></a>
+
+    </div>
+
+
+</body>
+</html>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/js.js"></script>
+<script src="js/主角录.js">
+</script>
